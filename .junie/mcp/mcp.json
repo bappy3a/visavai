@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/bappy/.config/herd-lite/bin/php",
+            "args": [
+                "/Users/bappy/www/visavai/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
