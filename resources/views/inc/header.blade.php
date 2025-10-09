@@ -21,9 +21,6 @@
                                         <a href="{{ route('about') }}">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('services') }}">Services</a>
-                                    </li>
-                                    <li>
                                         <a href="{{ route('blogs') }}">Blogs</a>
                                     </li>
                                     <li>
