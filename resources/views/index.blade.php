@@ -575,16 +575,6 @@
                     <h2 class="black visible-slowly-right">
                         Our Pricing Plan
                     </h2>
-                    <ul class="nav pricing-tabbing nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                    type="button" role="tab" aria-controls="home" aria-selected="true">Daily</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Monthy</button>
-                        </li>
-                    </ul>
                 </div>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -633,109 +623,6 @@
                                             </div>
                                         </div>
                                         <h4 class="black">Normal Plan</h4>
-                                    </div>
-                                    <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
-                                        </li>
-                                    </ul>
-                                    <a href="contact.html"
-                                       class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                        Get Started
-                                        <i class="fa-solid fa-arrow-right-long last"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="pricing-items items3">
-                                    <div class="pricing-head d-grid gap-3">
-                                        <div
-                                            class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
-                                            <div class="box">
-                                                <h2 class="black">$35</h2>
-                                                <span class="pra">Per Month</span>
-                                            </div>
-                                        </div>
-                                        <h4 class="black">Hard Plan</h4>
-                                    </div>
-                                    <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
-                                        </li>
-                                    </ul>
-                                    <a href="contact.html"
-                                       class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                        Get Started
-                                        <i class="fa-solid fa-arrow-right-long last"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row g-lg-4 g-4 justify-content-center align-items-center">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="pricing-items items2">
-                                    <div class="pricing-head d-grid gap-3">
-                                        <div
-                                            class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
-                                            <div class="box">
-                                                <h2 class="black">$19</h2>
-                                                <span class="pra">Per Month</span>
-                                            </div>
-                                        </div>
-                                        <h4 class="black">Normal Plan</h4>
-                                    </div>
-                                    <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                        </li>
-                                        <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                            <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
-                                        </li>
-                                    </ul>
-                                    <a href="contact.html"
-                                       class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                        Get Started
-                                        <i class="fa-solid fa-arrow-right-long last"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="pricing-items items1">
-                                    <div class="pricing-head d-grid gap-3">
-                                        <div
-                                            class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
-                                            <div class="box">
-                                                <h2 class="black">$29</h2>
-                                                <span class="pra">Per Month</span>
-                                            </div>
-                                        </div>
-                                        <h4 class="black">Basic Plan</h4>
                                     </div>
                                     <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                         <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
