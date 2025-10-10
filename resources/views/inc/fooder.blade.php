@@ -5,8 +5,8 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget footer-widgets-pragraph">
                         <div class="widget-head">
-                            <a href="index.html">
-                                <img src="assets/img/logo/logo-white.png" alt="logo-img">
+                            <a href="{{ route('home') }}">
+                                <img src="{{ asset('assets/img/logo/visavai.png') }}" alt="logo-img" style="width: 132px;height:40px">
                             </a>
                         </div>
                         <div class="footer-content">

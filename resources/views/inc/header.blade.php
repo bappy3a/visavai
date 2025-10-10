@@ -5,7 +5,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="{{ route('home') }}" class="header-logo">
-                            <img src="{{ asset('assets/img/logo/logo.png') }}" alt="logo-img">
+                            <img src="{{ asset('assets/img/logo/visavai.png') }}" alt="logo-img" style="width: 132px;height:40px">
                         </a>
                     </div>
                 </div>
