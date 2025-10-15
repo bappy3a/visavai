@@ -80,11 +80,24 @@
 @yield('content')
 <!-- Main area end -->
 <!-- Back to top button start -->
-<button class="scroll-to-top position-fixed">
-    <i class="fas fa-chevron-up"></i>
-</button>
+{{--<button class="scroll-to-top position-fixed">--}}
+{{--    <i class="fas fa-chevron-up"></i>--}}
+{{--</button>--}}
 <!--<< Footer Section Start >>-->
 @include('inc.fooder')
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/68efdc96098ba01951c43470/1j7kfbc2u';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 <!-- JS start here -->
 <script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
