@@ -7,13 +7,13 @@
     <section class="breadcrumb-section position-relative fix">
         <div class="container">
             <div class="bread-content">
-                <h2 class="black">Contact Us</h2>
+                <h2 class="black">যোগাযোগ</h2>
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="{{ route('home') }}">হোম</a>
                     </li>
                     <li><i class="fa-solid fa-chevron-right p1-clr"></i></li>
-                    <li>Contact Us</li>
+                    <li>যোগাযোগ</li>
                 </ul>
             </div>
         </div>
@@ -27,45 +27,7 @@
                 <div class="col-sm-6 col-lg-4">
                     <ul class="contact-info d-grid gap-3">
                         <li class="mb-2">
-                            <h3 class="black">Bangladesh,Dhaka</h3>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-location-dot p1-clr"></i>
-                            <a href="#" class="black fs-eight">3517 W. Gray St. Utica, Pennsylvania</a>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-phone p1-clr"></i>
-                            <a href="tel:(219)555-0114" class="black fs-eight">(219) 555-0114</a>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-envelope p1-clr"></i>
-                            <a href="mailto:alma.lawson@example.com" class="black fs-eight">alma.lawson@example.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <ul class="contact-info d-grid gap-3">
-                        <li class="mb-2">
-                            <h3 class="black">Toronto, Canada</h3>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-location-dot p1-clr"></i>
-                            <a href="#" class="black fs-eight">3517 W. Gray St. Utica, Pennsylvania</a>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-phone p1-clr"></i>
-                            <a href="tel:(219)555-0114" class="black fs-eight">(219) 555-0114</a>
-                        </li>
-                        <li class="d-flex align-items-center gap-xxl-3 gap-2">
-                            <i class="fa-solid fa-envelope p1-clr"></i>
-                            <a href="mailto:alma.lawson@example.com" class="black fs-eight">alma.lawson@example.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <ul class="contact-info d-grid gap-3">
-                        <li class="mb-2">
-                            <h3 class="black">Riyad, Saudia Arabia</h3>
+                            <h3 class="black">ঢাকা, বাংলাদেশ</h3>
                         </li>
                         <li class="d-flex align-items-center gap-xxl-3 gap-2">
                             <i class="fa-solid fa-location-dot p1-clr"></i>
@@ -90,63 +52,39 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="ticket-booking-content">
-                        <h2 class="black mb-4 pb-xxl-3">Ticket Booking</h2>
+                        <h2 class="black mb-4 pb-xxl-3">যাচাইয়ের জন্য জমা দিন</h2>
                         <form action="https://vizoar-html.vercel.app/assets/mail.php" method="POST" id="contact-form">
                             <div class="row g-xxl-4 g-3">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="ticket-booking-widget">
-                                        <select name="checkIn" required>
-                                            <option value="" disabled selected>Check In</option>
-                                            <option value="08:00 AM">08:00 AM</option>
-                                            <option value="12:00 PM">12:00 PM</option>
-                                            <option value="03:00 PM">03:00 PM</option>
-                                            <option value="06:00 PM">06:00 PM</option>
-                                        </select>
+                                        <input type="text" class="form-control" name="name" required placeholder="আপনার নাম">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="ticket-booking-widget">
-                                        <select name="checkOut" required>
-                                            <option value="" disabled selected>Check Out</option>
-                                            <option value="08:00 AM">08:00 AM</option>
-                                            <option value="12:00 P">12:00 PM</option>
-                                            <option value="03:00 PM">03:00 PM</option>
-                                            <option value="06:00 PM">06:00 PM</option>
-                                        </select>
+                                        <input type="email" class="form-control" name="email" required placeholder="আপনার ইমেইল">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="ticket-booking-widget">
-                                        <select name="location" required>
-                                            <option value="" disabled selected>Location</option>
-                                            <option value="United Kingdom">United Kingdom</option>
-                                            <option value="United States">United States</option>
-                                            <option value="Canada">Canada</option>
-                                            <option value="Australia">Australia</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="ticket-booking-widget">
-                                        <select name="date" required>
-                                            <option value="" disabled selected>Date</option>
-                                            <option value="2025-01-21">2025-01-21</option>
-                                            <option value="2025-01-22">2025-01-22</option>
-                                            <option value="2025-01-23">2025-01-23</option>
-                                            <option value="2025-01-24">2025-01-24</option>
+                                        <select name="verification_type" required>
+                                            <option value="" disabled selected>আপনি কী যাচাই করতে চান?</option>
+                                            <option value="visa">ভিসা</option>
+                                            <option value="air_ticket">এয়ার টিকেট</option>
+                                            <option value="offer_letter">অফার লেটার</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="ticket-booking-widget">
                                         <textarea name="message" required rows="3"
-                                            placeholder="Message here.."></textarea>
+                                            placeholder="আপনার বার্তা / ডকুমেন্ট নম্বর"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <button type="submit"
                                         class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-5 p2-bg">
-                                        Book Now
+                                        জমা দিন
                                         <i class="fa-solid fa-arrow-right-long last"></i>
                                     </button>
                                 </div>

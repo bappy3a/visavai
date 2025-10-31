@@ -7,13 +7,13 @@
     <section class="breadcrumb-section position-relative fix">
         <div class="container">
             <div class="bread-content">
-                <h2 class="black">About Us</h2>
+                <h2 class="black">আমাদের সম্পর্কে</h2>
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="{{ route('home') }}">হোম</a>
                     </li>
                     <li><i class="fa-solid fa-chevron-right p1-clr"></i></li>
-                    <li>About Us</li>
+                    <li>আমাদের সম্পর্কে</li>
                 </ul>
             </div>
         </div>
@@ -28,14 +28,11 @@
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-title mb-4 pb-2">
-                                <h2 class="mb-3 fw-bold black visible-slowly-right">
-                                    Dream Explore Unlock the Entire World Visa
+                                <h2 class="mb-3 fw-bold black">
+                                    প্রতারণা এড়ান, নিশ্চিন্তে ভ্রমণ করুন
                                 </h2>
                                 <p class="fs-six pra">
-                                    A Visa allows individuals to enter a foreign country for various purposes such
-                                    as
-                                    tourism, work, study, or residency. It
-                                    is a legal
+                                    প্রতি বছর হাজার হাজার বাংলাদেশী মানুষ নকল ভিসা, ভুয়া টিকেট বা জাল অফার লেটারের কারণে প্রতারিত হন। "ভিসাভাই" এর লক্ষ্য হলো এই প্রতারণা চক্র বন্ধ করা। আমরা সরাসরি এম্বাসি ও এয়ারলাইনস এর ডাটাবেসের সাথে আপনার তথ্য যাচাই করে শতভাগ সঠিক রিপোর্ট প্রদান করি।
                                 </p>
                             </div>
                             <div class="about-information d-grid gap-xl-3 gap-3 white-bg">
@@ -43,19 +40,19 @@
                                     <div class="icon d-center n100-bg">
                                         <img src="{{ asset('assets/img/icon/passport.png') }}" alt="img">
                                     </div>
-                                    <h4 class="black">Your Passport to Adventure</h4>
+                                    <h4 class="black">আপনার নিরাপদ যাত্রার নিশ্চয়তা</h4>
                                 </div>
                                 <div class="line"></div>
                                 <div class="about-info d-flex align-items-center gap-lg-3 gap-2">
                                     <div class="icon d-center n100-bg">
                                         <img src="{{ asset('assets/img/icon/passport.png') }}" alt="img">
                                     </div>
-                                    <h4 class="black">Visa Your Gateway to the World</h4>
+                                    <h4 class="black">ভিসা যাচাইয়ে আপনার বিশ্বস্ত সঙ্গী</h4>
                                 </div>
                             </div>
-                            <a href="contact.html"
+                            <a href="{{ route('contact') }}"
                                 class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
-                                Learn More
+                                আরও জানুন
                                 <i class="fa-solid fa-arrow-right last"></i>
                             </a>
                         </div>
@@ -76,8 +73,8 @@
         <div class="container">
             <div class="row justify-content-center mb-md-5 mb-4">
                 <div class="col-lg-8">
-                    <h2 class="text-center black visible-slowly-right">
-                        Your Passport to AdventureVisa Your Global Access
+                    <h2 class="text-center black">
+                        জনপ্রিয় দেশগুলোর ভিসা যাচাই করুন
                     </h2>
                 </div>
             </div>
@@ -144,15 +141,13 @@
             <div
                 class="row g-3 text-lg-start text-center justify-content-lg-between justify-content-center align-items-end mb-md-5 mb-4">
                 <div class="col-lg-7">
-                    <h2 class="black visible-slowly-right">
-                        Explore the Unseen with Visa
-                        Passport to Discovery
+                    <h2 class="black">
+                        যেসব ভিসা যাচাই করা হয়
                     </h2>
                 </div>
                 <div class="col-lg-5">
                     <p class="pra fs-six">
-                        A Visa allows individuals to enter a foreign country for various purposes such as tourism
-                        work
+                        আপনার ভিসা, টিকেট বা অফার লেটার যাচাই করুন এবং প্রতারণা থেকে নিরাপদ থাকুন।
                     </p>
                 </div>
             </div>
@@ -161,19 +156,14 @@
                     <div class="unseen-item rounded-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h3>
-                                <a href="visa-details.html" class="black">Business Visa</a>
+                                <a href="visa-details.html" class="black">ওয়ার্ক পারমিট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
                                 <img src="{{ asset('assets/img/icon/unseen-icon1.png') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
-                            A Visa allows individuals to enter a country for various purposes such tourism A Visa
-                            allows
-                            individuals to enter a
-                            country various A Visa allows individuals to the enter a country for various purposes
-                            such
-                            as tourism A Visa allows
+                            কাজের ভিসার সত্যতা যাচাই করুন। কোম্পানিটি বৈধ কিনা এবং আপনার নামে ওয়ার্ক পারমিট ইস্যু হয়েছে কিনা তা নিশ্চিত হোন।
                         </p>
                         <a href="visa-details.html"
                             class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
@@ -185,19 +175,14 @@
                     <div class="unseen-item rounded-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h3>
-                                <a href="visa-details.html" class="black">Student Visa</a>
+                                <a href="visa-details.html" class="black">স্টুডেন্ট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
                                 <img src="{{ asset('assets/img/icon/unseen-icon2.png') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
-                            A Visa allows individuals to enter a country for various purposes such tourism A Visa
-                            allows
-                            individuals to enter a
-                            country various A Visa allows individuals to the enter a country for various purposes
-                            such
-                            as tourism A Visa allows
+                            ইউনিভার্সিটির অফার লেটার ও স্টুডেন্ট ভিসা ফাইলে কোনো গরমিল আছে কিনা তা প্রফেশনালভাবে চেক করে নিন।
                         </p>
                         <a href="visa-details.html"
                             class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
@@ -209,19 +194,14 @@
                     <div class="unseen-item rounded-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h3>
-                                <a href="visa-details.html" class="black">Working Visa</a>
+                                <a href="visa-details.html" class="black">মেডিকেল ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
                                 <img src="{{ asset('assets/img/icon/unseen-icon3.png') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
-                            A Visa allows individuals to enter a country for various purposes such tourism A Visa
-                            allows
-                            individuals to enter a
-                            country various A Visa allows individuals to the enter a country for various purposes
-                            such
-                            as tourism A Visa allows
+                            চিকিৎসার জন্য বিদেশ ভ্রমণের ভিসা ও হাসপাতালের অ্যাপয়েন্টমেন্ট লেটার যাচাই করে মানসিক চাপমুক্ত থাকুন।
                         </p>
                         <a href="visa-details.html"
                             class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
@@ -233,19 +213,14 @@
                     <div class="unseen-item rounded-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h3>
-                                <a href="visa-details.html" class="black">Tourist Visa</a>
+                                <a href="visa-details.html" class="black">টুরিস্ট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
                                 <img src="{{ asset('assets/img/icon/unseen-icon4.png') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
-                            A Visa allows individuals to enter a country for various purposes such tourism A Visa
-                            allows
-                            individuals to enter a
-                            country various A Visa allows individuals to the enter a country for various purposes
-                            such
-                            as tourism A Visa allows
+                            ভ্রমণের ভিসা, হোটেল বুকিং এবং রিটার্ন টিকেট—সবকিছু আসল কিনা তা যাচাই করে আপনার ছুটি উপভোগ করুন।
                         </p>
                         <a href="visa-details.html"
                             class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
@@ -267,12 +242,12 @@
                         </div>
                         <h3 class="mb-xxl-4 mb-4 pb-1p">
                             <a href="#" class="black fw-bold">
-                                Picture your Journey with Visa Discover Wander
+                                সন্দেহ হলেই যাচাই করুন, নিরাপদ থাকুন
                             </a>
                         </h3>
-                        <a href="contact.html"
+                        <a href="{{ route('contact') }}"
                             class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
-                            Contact Us
+                            যোগাযোগ করুন
                             <i class="fa-solid fa-arrow-right last"></i>
                         </a>
                     </div>
@@ -286,24 +261,24 @@
                     <div class="counter-area1">
                         <div class="counter-items d-md-flex d-grid align-items-center gap-3">
                             <div class="content d-flex align-items-center gap-0">
-                                <span class="odometer" data-count="800"></span>
+                                <span class="odometer" data-count="50000"></span>
                                 <span>+</span>
                             </div>
-                            <p class="fs-eight pra">Complete <br> Project</p>
+                            <p class="fs-eight pra">সফল যাচাই</p>
                         </div>
                         <div class="counter-items d-md-flex d-grid align-items-center gap-3">
                             <div class="content d-flex align-items-center gap-0">
-                                <span class="odometer" data-count="200"></span>
+                                <span class="odometer" data-count="5000"></span>
                                 <span>+</span>
                             </div>
-                            <p class="fs-eight pra">Team <br> Member</p>
+                            <p class="fs-eight pra">প্রতারণা প্রতিহত</p>
                         </div>
                         <div class="counter-items d-md-flex d-grid align-items-center gap-3">
                             <div class="content d-flex align-items-center gap-0">
-                                <span class="odometer" data-count="100"></span>
-                                <span>+</span>
+                                <span class="odometer" data-count="98"></span>
+                                <span>%</span>
                             </div>
-                            <p class="fs-eight pra">Client <br> Review</p>
+                            <p class="fs-eight pra">সন্তুষ্ট গ্রাহক</p>
                         </div>
                     </div>
                 </div>
@@ -325,8 +300,8 @@
         <div class="container">
             <div
                 class="d-flex gap-3 flex-sm-nowrap flex-wrap align-items-end justify-content-sm-between justify-content-center pb-md-5 mb-4">
-                <h2 class="black visible-slowly-right">
-                    Our Pricing Plan
+                <h2 class="black">
+                    আমাদের যাচাইকরণ প্যাকেজ
                 </h2>
                 <ul class="nav pricing-tabbing nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -348,29 +323,26 @@
                                     <div
                                         class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$29</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳৫০০</h2>
+                                            <span class="pra">প্রতি ডকুমেন্ট</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Basic Plan</h4>
+                                    <h4 class="black">সিঙ্গেল চেক</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> যেকোনো ১টি ডকুমেন্ট যাচাই
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> ২৪ ঘণ্টার মধ্যে রিপোর্ট
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> ইমেইল সাপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -381,29 +353,26 @@
                                     <div
                                         class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$19</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳১২০০</h2>
+                                            <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Normal Plan</h4>
+                                    <h4 class="black">কম্বো প্যাক</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> ভিসা + টিকেট + অফার লেটার
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> ১২ ঘণ্টার মধ্যে রিপোর্ট
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> ফোন সাপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -414,29 +383,26 @@
                                     <div
                                         class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$35</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳২৫০০</h2>
+                                            <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Hard Plan</h4>
+                                    <h4 class="black">প্রিমিয়াম সাপোর্ট</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> সম্পূর্ণ ফাইল চেক
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> সরাসরি এক্সপার্ট রিভিউ
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> দ্রুততম সময়ে রিপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -451,29 +417,26 @@
                                     <div
                                         class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$19</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳১২০০</h2>
+                                            <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Normal Plan</h4>
+                                    <h4 class="black">কম্বো প্যাক</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> ভিসা + টিকেট + অফার লেটার
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> ১২ ঘণ্টার মধ্যে রিপোর্ট
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> ফোন সাপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -484,29 +447,26 @@
                                     <div
                                         class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$29</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳৫০০</h2>
+                                            <span class="pra">প্রতি ডকুমেন্ট</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Basic Plan</h4>
+                                    <h4 class="black">সিঙ্গেল চেক</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> যেকোনো ১টি ডকুমেন্ট যাচাই
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> ২৪ ঘণ্টার মধ্যে রিপোর্ট
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> ইমেইল সাপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -517,29 +477,26 @@
                                     <div
                                         class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">$35</h2>
-                                            <span class="pra">Per Month</span>
+                                            <h2 class="black">৳২৫০০</h2>
+                                            <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
-                                    <h4 class="black">Hard Plan</h4>
+                                    <h4 class="black">প্রিমিয়াম সাপোর্ট</h4>
                                 </div>
                                 <ul class="pricing-list d-flex flex-column mt-4 pt-2 mb-4 pb-xl-3">
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
+                                        <i class="fa-solid fa-angles-right black"></i> সম্পূর্ণ ফাইল চেক
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Winning for Your Startup
+                                        <i class="fa-solid fa-angles-right black"></i> সরাসরি এক্সপার্ট রিভিউ
                                     </li>
                                     <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Mistakes To Avoid
-                                    </li>
-                                    <li class="d-flex align-items-center gap-lg-2 gap-1 fs-six pra">
-                                        <i class="fa-solid fa-angles-right black"></i> Your Event, Your Memories
+                                        <i class="fa-solid fa-angles-right black"></i> দ্রুততম সময়ে রিপোর্ট
                                     </li>
                                 </ul>
-                                <a href="contact.html"
+                                <a href="{{ route('contact') }}"
                                     class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
-                                    Get Started
+                                    অর্ডার করুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
                                 </a>
                             </div>
@@ -552,8 +509,8 @@
     <!-- Faq Section Start -->
     <section class="faq-section section-padding fix">
         <div class="container">
-            <h2 class="black visible-slowly-right text-center pb-md-5 mb-4">
-                Ask Some Question
+            <h2 class="black text-center pb-md-5 mb-4">
+                সাধারণ জিজ্ঞাসা
             </h2>
             <div class="row g-4 justify-content-between">
                 <div class="col-lg-6">
@@ -562,16 +519,13 @@
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What types of visas are available?
+                                    আপনারা কিভাবে ভিসা যাচাই করেন?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            A Visa allows individuals to enter a country for various such tourism A
-                                            Visa
-                                            allows individuals A Visa allows
-                                            individuals A Visa allows individuals
+                                            আমরা আপনার ভিসা নম্বর, পাসপোর্ট নম্বর এবং অন্যান্য তথ্য নিয়ে সরাসরি সংশ্লিষ্ট দেশের ইমিগ্রেশন বা এম্বাসির অনলাইন পোর্টালে যাচাই করি।
                                         </p>
                                     </div>
                                 </div>
@@ -581,16 +535,13 @@
                             <div class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How long does it take to process a visa?
+                                    যাচাই করতে কত সময় লাগে?
                                 </button>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            A Visa allows individuals to enter a country for various such tourism A
-                                            Visa
-                                            allows individuals A Visa allows
-                                            individuals A Visa allows individuals
+                                            প্যাকেজের উপর নির্ভর করে, সাধারণত আমরা ১২ থেকে ২৪ ঘণ্টার মধ্যে ভেরিফিকেশন রিপোর্ট প্রদান করি।
                                         </p>
                                     </div>
                                 </div>
@@ -601,16 +552,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    Do I need a visa?
+                                    আমার ডকুমেন্ট কি আপনাদের কাছে নিরাপদ?
                                 </button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            A Visa allows individuals to enter a country for various such tourism A
-                                            Visa
-                                            allows individuals A Visa allows
-                                            individuals A Visa allows individuals
+                                            ১০০% নিরাপদ। আপনার ব্যক্তিগত তথ্যের গোপনীয়তা রক্ষা করা আমাদের সর্বোচ্চ অগ্রাধিকার। কাজ শেষে আমরা সকল তথ্য সার্ভার থেকে মুছে ফেলি।
                                         </p>
                                     </div>
                                 </div>
@@ -621,16 +569,13 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour" aria-expanded="false"
                                     aria-controls="collapsefour">
-                                    What is the a visa and a passport?
+                                    যদি আমার ভিসা নকল ধরা পড়ে, তাহলে কী হবে?
                                 </button>
                                 <div id="collapsefour" class="accordion-collapse collapse"
                                     aria-labelledby="headingfour" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            A Visa allows individuals to enter a country for various such tourism A
-                                            Visa
-                                            allows individuals A Visa allows
-                                            individuals A Visa allows individuals
+                                            আমরা আপনাকে পরবর্তী আইনি পদক্ষেপ বা করণীয় সম্পর্কে সঠিক পরামর্শ দেবো এবং কিভাবে প্রতারণা থেকে বাঁচতে পারেন সে বিষয়ে গাইড করবো।
                                         </p>
                                     </div>
                                 </div>
