@@ -5,7 +5,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="{{ route('home') }}" class="header-logo">
-                            <img src="{{ asset('assets/img/logo/visavai.png') }}" alt="logo-img" style="width: 132px;height:40px">
+                            <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="logo-img" style="width: 132px;height:40px">
                         </a>
                     </div>
                 </div>
@@ -15,16 +15,16 @@
                             <nav id="mobile-menu">
                                 <ul>
                                     <li>
-                                        <a href="{{ route('home') }}">Home</a>
+                                        <a href="{{ route('home') }}">হোম</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('about') }}">About Us</a>
+                                        <a href="{{ route('about') }}">আমাদের সম্পর্কে</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('blogs') }}">Blogs</a>
+                                        <a href="{{ route('blogs') }}">ব্লগ</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('contact') }}">Contact</a>
+                                        <a href="{{ route('contact') }}">যোগাযোগ</a>
                                     </li>
 
                                 </ul>

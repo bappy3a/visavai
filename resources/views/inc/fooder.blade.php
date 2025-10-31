@@ -6,15 +6,12 @@
                     <div class="single-footer-widget footer-widgets-pragraph">
                         <div class="widget-head">
                             <a href="{{ route('home') }}">
-                                <img src="{{ asset('assets/img/logo/visavai.png') }}" alt="logo-img" style="width: 132px;height:40px">
+                                <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="logo-img" style="width: 132px;height:40px">
                             </a>
                         </div>
                         <div class="footer-content">
                             <p class="pra2 fs-eight">
-                                A visa is an official document that permits a entry into a specific country. It
-                                indicates
-                                the holder's permission to
-                                stay either
+                                ভিসাভাই হলো আপনার বিশ্বস্ত যাচাইকরণ সহযোগী। যেকোনো ভিসা, এয়ার টিকেট বা অফার লেটার আসল নাকি নকল, তা মুহূর্তেই যাচাই করে নিরাপদ থাকুন।
                             </p>
                             <div class="foot-address d-flex align-items-center gap-3 mb-xl-4 mb-3">
                                 <div class="icon d-center rounded-circle">
@@ -22,7 +19,7 @@
                                 </div>
                                 <div class="cont">
                                         <span class="fs-six white d-block mb-xl-2 mb-1">
-                                            Address
+                                            ঠিকানা
                                         </span>
                                     <h4 class="white">
                                         <a href="#" class="white">66 Broklyant,New India</a>
@@ -35,7 +32,7 @@
                                 </div>
                                 <div class="cont">
                                         <span class="fs-six white d-block mb-xl-2 mb-1">
-                                            Phone Number
+                                            ফোন নম্বর
                                         </span>
                                     <h4 class="white">
                                         <a href="tel:0123456789101" class="white">012 345 678 9101</a>
@@ -71,32 +68,32 @@
                     <div class="single-footer-widget d-flex justify-content-lg-center">
                         <div class="boxes">
                             <div class="widget-head">
-                                <h3>Page</h3>
+                                <h3>পেইজ</h3>
                             </div>
                             <ul class="list-area">
                                 <li>
                                     <a href="about.html">
-                                        About Us
+                                        আমাদের সম্পর্কে
                                     </a>
                                 </li>
                                 <li>
                                     <a href="country.html">
-                                        Service
+                                        সেবাসমূহ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="country.html">
-                                        Gallery
+                                        গ্যালারি
                                     </a>
                                 </li>
                                 <li>
                                     <a href="contact.html">
-                                        Contact
+                                        যোগাযোগ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="blog.html">
-                                        Blog And News
+                                        ব্লগ ও নিউজ
                                     </a>
                                 </li>
                             </ul>
@@ -111,22 +108,22 @@
             <div
                 class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-2 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                 <p class="cmn-white body-font fs-six">
-                    &copy; {{ config('app.name') }} {{date('Y')}} | All Rights Reserved
+                    &copy; {{ config('app.name') }} {{date('Y')}} | সর্বস্বত্ব সংরক্ষিত
                 </p>
                 <ul class="footer-menu">
                     <li>
                         <a href="contact.html" class="fs-six body-font cmn-white">
-                            Terms & Condition
+                            শর্তাবলী
                         </a>
                     </li>
                     <li>
                         <a href="contact.html" class="fs-six body-font cmn-white">
-                            Privacy Policy
+                            গোপনীয়তা নীতি
                         </a>
                     </li>
                     <li>
                         <a href="contact.html" class="fs-six body-font cmn-white">
-                            Contact Us
+                            যোগাযোগ
                         </a>
                     </li>
                 </ul>
