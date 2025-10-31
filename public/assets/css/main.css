@@ -3810,7 +3810,7 @@ input.main-search-input::placeholder {
   border: 1px solid var(--border);
 }
 .counter-items .content span {
-  font-size: 50px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 700;
   color: var(--black);
