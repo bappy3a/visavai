@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ config('app.name') }} - @yield('title') </title>
-    <meta name="author" content="tecursive">
-    <meta name="description" content="Vizoar - Immigration and Visa Consulting HTML Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
+    <title>Visavai – ভিসা রিলেটেড সকল ডকুমেন্ট যাচাইয়ের নির্ভরযোগ্য প্ল্যাটফর্ম - @yield('title') </title>
+    <meta name="author" content="VisaVai">
+
+    <meta name="title" content="Visavai – ভিসা রিলেটেড সকল ডকুমেন্ট যাচাইয়ের নির্ভরযোগ্য প্ল্যাটফর্ম">
+    <meta name="description" content="Visavai হচ্ছে একটি ভিসা ডকুমেন্ট চেকিং প্ল্যাটফর্ম যেখানে আপনি আপনার জব অফার লেটার, এয়ার টিকেটসহ সব ধরনের ডকুমেন্ট যাচাই করতে পারেন। আমাদের বিশেষজ্ঞ টিম রিপোর্ট তৈরি করে আপনাকে সঠিক তথ্য প্রদান করে — নিশ্চিন্তে ভ্রমণের জন্য Visavai আপনার পাশে।">
+    <meta name="keywords" content="visa check, document verification, offer letter check, air ticket check, visa report, visavai, ভিসা যাচাই, ডকুমেন্ট চেকিং">
+    <meta name="author" content="Visavai Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="bn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visavai.com/">
+    <meta property="og:title" content="Visavai – ভিসা রিলেটেড সকল ডকুমেন্ট যাচাইয়ের নির্ভরযোগ্য প্ল্যাটফর্ম">
+    <meta property="og:description" content="আপনার ভিসা, অফার লেটার, এয়ার টিকেটসহ সব ডকুমেন্ট যাচাই করুন এক জায়গায় — Visavai এর মাধ্যমে নিশ্চিন্তে ভ্রমণ করুন।">
+    <meta property="og:image" content="https://visavai.com/images/preview.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://visavai.com/">
+    <meta name="twitter:title" content="Visavai – ভিসা রিলেটেড সকল ডকুমেন্ট যাচাইয়ের নির্ভরযোগ্য প্ল্যাটফর্ম">
+    <meta name="twitter:description" content="Visavai হচ্ছে একটি ভিসা ডকুমেন্ট চেকিং প্ল্যাটফর্ম যেখানে আপনি সহজেই আপনার ভ্রমণ সম্পর্কিত ডকুমেন্ট যাচাই করতে পারেন।">
+    <meta name="twitter:image" content="https://visavai.com/images/preview.jpg">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo/favs.png') }}">
     <!-- Place favicon.ico in the root directory -->
