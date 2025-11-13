@@ -22,7 +22,7 @@
                                             ঠিকানা
                                         </span>
                                     <h4 class="white">
-                                        <a href="#" class="white">66 Broklyant,New India</a>
+                                        <a href="#" class="white">76/A, Road 11, Banani, Dhaka, Bangladesh, 1213</a>
                                     </h4>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                                             ফোন নম্বর
                                         </span>
                                     <h4 class="white">
-                                        <a href="tel:0123456789101" class="white">012 345 678 9101</a>
+                                        <a href="tel:+8801319113344" class="white">+8801319113344</a>
                                     </h4>
                                 </div>
                             </div>
@@ -55,10 +55,10 @@
                                     holder's permission
                                 </p>
                                 <div class="social-wrapper d-flex align-items-center">
-                                    <a href="#" class=" black"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class=" black"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#" class=" black"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class=" black"><i class="fa-brands fa-x"></i></a>
+                                    <a href="https://www.facebook.com/visa.vai.1" target="_blank" class=" black"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/company/visa-vai/" target="_blank" class=" black"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/visa.vai/" target="_blank" class=" black"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://x.com/visa_vai" target="_blank" class=" black"><i class="fa-brands fa-x"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -72,27 +72,17 @@
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="about.html">
+                                    <a href="{{ route('about') }}">
                                         আমাদের সম্পর্কে
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="country.html">
-                                        সেবাসমূহ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="country.html">
-                                        গ্যালারি
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
+                                    <a href="{{ route('contact') }}">
                                         যোগাযোগ
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">
+                                    <a href="{{ route('blogs') }}">
                                         ব্লগ ও নিউজ
                                     </a>
                                 </li>
@@ -112,17 +102,17 @@
                 </p>
                 <ul class="footer-menu">
                     <li>
-                        <a href="contact.html" class="fs-six body-font cmn-white">
+                        <a href="#" class="fs-six body-font cmn-white">
                             শর্তাবলী
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" class="fs-six body-font cmn-white">
+                        <a href="#" class="fs-six body-font cmn-white">
                             গোপনীয়তা নীতি
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" class="fs-six body-font cmn-white">
+                        <a href="{{ route('contact') }}" class="fs-six body-font cmn-white">
                             যোগাযোগ
                         </a>
                     </li>

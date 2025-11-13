@@ -31,15 +31,15 @@
                         </li>
                         <li class="d-flex align-items-center gap-xxl-3 gap-2">
                             <i class="fa-solid fa-location-dot p1-clr"></i>
-                            <a href="#" class="black fs-eight">3517 W. Gray St. Utica, Pennsylvania</a>
+                            <a href="#" class="black fs-eight">76/A, Road 11, Banani, Dhaka, Bangladesh, 1213</a>
                         </li>
                         <li class="d-flex align-items-center gap-xxl-3 gap-2">
                             <i class="fa-solid fa-phone p1-clr"></i>
-                            <a href="tel:(219)555-0114" class="black fs-eight">(219) 555-0114</a>
+                            <a href="tel:+8801319113344" class="black fs-eight">+8801319113344</a>
                         </li>
                         <li class="d-flex align-items-center gap-xxl-3 gap-2">
                             <i class="fa-solid fa-envelope p1-clr"></i>
-                            <a href="mailto:alma.lawson@example.com" class="black fs-eight">alma.lawson@example.com</a>
+                            <a href="mailto:visavaiconsulting@gmail.com" class="black fs-eight">visavaiconsulting@gmail.com</a>
                         </li>
                     </ul>
                 </div>

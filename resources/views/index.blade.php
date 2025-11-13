@@ -11,7 +11,7 @@
                     <div class="col-lg-6">
                         <div class="hero-content-version1">
                             <h1 class="black">
-                                <span class="p1-clr d-block">ভিসা পাওয়ার </span>আগে,যাচাই করুন সহজে
+                                <span class="p1-clr d-block">ভিসা ও ডকুমেন্ট </span>যাচাই করুন সহজে
                             </h1>
                             <p class="pra">
                                 যেকোনো দেশের ভিসা, এয়ার টিকেট বা চাকরির অফার লেটার আসল কিনা তা নিশ্চিত করুন। প্রতারণা থেকে বাঁচতে "ভিসাভাই" আছে আপনার পাশে।
