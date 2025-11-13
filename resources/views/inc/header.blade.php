@@ -5,7 +5,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="{{ route('home') }}" class="header-logo">
-                            <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="logo-img" style="width: 132px;height:40px">
+                            <img src="{{ asset('assets/img/logo/logo.webp') }}" alt="logo-img" style="width: 132px;height:40px" fetchpriority="high">
                         </a>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     </a>
                     <div class="header__hamburger d-xl-none d-block my-auto">
                         <div class="sidebar__toggle">
-                            <img src="assets/img/icon/menu.png" alt="icon">
+                            <img src="assets/img/icon/menu.png" alt="icon" loading="eager">
                         </div>
                     </div>
 

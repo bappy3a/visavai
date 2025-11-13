@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-thumb1 btn-vivacity">
-                            <img src="assets/img/banner/hero-thumb1.png" alt="img">
+                            <img src="assets/img/banner/hero-thumb1.png" alt="img" fetchpriority="high">
                             <div class="ratting-cmn-box">
                                 <div class="d-flex align-items-center gap-xl-3 gap-2 mb-1">
                                     <h3 class="black">4.9/5</h3> <i class="fa-solid fa-star"></i>
@@ -57,9 +57,9 @@
                                 </p>
                             </div>
                             <!-- ele -->
-                            <img src="assets/img/banner/flga1.png" alt="img" class="flag1">
-                            <img src="assets/img/banner/flga2.png" alt="img" class="flag2">
-                            <img src="assets/img/banner/flga3.png" alt="img" class="flag3">
+                            <img src="assets/img/banner/flga1.png" alt="img" class="flag1" loading="lazy">
+                            <img src="assets/img/banner/flga2.png" alt="img" class="flag2" loading="lazy">
+                            <img src="assets/img/banner/flga3.png" alt="img" class="flag3" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <div class="access-item rounded-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/route.png" alt="img">
+                                    <img src="assets/img/icon/route.png" alt="img" loading="lazy">
                                 </div>
                                 <span class="storke">
                                     01
@@ -96,7 +96,7 @@
                         <div class="access-item rounded-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/stamp.png" alt="img">
+                                    <img src="assets/img/icon/stamp.png" alt="img" loading="lazy">
                                 </div>
                                 <span class="storke">
                                     02
@@ -112,7 +112,7 @@
                         <div class="access-item rounded-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/visa.png" alt="img">
+                                    <img src="assets/img/icon/visa.png" alt="img" loading="lazy">
                                 </div>
                                 <span class="storke">
                                     03
@@ -145,14 +145,14 @@
                                 <div class="about-information d-grid gap-xl-3 gap-3 white-bg">
                                     <div class="about-info d-flex align-items-center gap-lg-3 gap-2">
                                         <div class="icon d-center n100-bg">
-                                            <img src="assets/img/icon/passport.png" alt="img">
+                                            <img src="assets/img/icon/passport.png" alt="img" loading="lazy">
                                         </div>
                                         <h4 class="black">আপনার নিরাপদ যাত্রার নিশ্চয়তা</h4>
                                     </div>
                                     <div class="line"></div>
                                     <div class="about-info d-flex align-items-center gap-lg-3 gap-2">
                                         <div class="icon d-center n100-bg">
-                                            <img src="assets/img/icon/passport.png" alt="img">
+                                            <img src="assets/img/icon/passport.png" alt="img" loading="lazy">
                                         </div>
                                         <h4 class="black">ভিসা যাচাইয়ে আপনার বিশ্বস্ত সঙ্গী</h4>
                                     </div>
@@ -166,9 +166,9 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="about-thumb position-relative reveal-left w-100 ms-xl-5">
-                                <img src="assets/img/about/about-thumb1.png" alt="img" class="w-100">
+                                <img src="assets/img/about/about-thumb1.png" alt="img" class="w-100" loading="lazy">
                                 <!-- Ele -->
-                                <img src="assets/img/about/about-flag.png" alt="img" class="about-ele">
+                                <img src="assets/img/about/about-flag.png" alt="img" class="about-ele" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -189,47 +189,47 @@
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                            <span class="flat d-center"><img src="assets/img/services/soudi-flag.png" alt="img"></span>
-                            <img src="assets/img/services/soudi.png" alt="img" class="w-100 rounded-4">
+                            <span class="flat d-center"><img src="assets/img/services/soudi-flag.png" alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/soudi.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                            <span class="flat d-center"><img src="assets/img/services/india-flag.png" alt="img"></span>
-                            <img src="assets/img/services/india.png" alt="img" class="w-100 rounded-4">
+                            <span class="flat d-center"><img src="assets/img/services/india-flag.png" alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/india.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
                             <span class="flat d-center"><img src="assets/img/services/ireland-flag.png"
-                                                             alt="img"></span>
-                            <img src="assets/img/services/ireland.png" alt="img" class="w-100 rounded-4">
+                                                             alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/ireland.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
                             <span class="flat d-center"><img src="assets/img/services/bangladesh-flag.png"
-                                                             alt="img"></span>
-                            <img src="assets/img/services/bangladesh.png" alt="img" class="w-100 rounded-4">
+                                                             alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/bangladesh.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
                             <span class="flat d-center"><img src="assets/img/services/newzeland-flag.png"
-                                                             alt="img"></span>
-                            <img src="assets/img/services/newzeland.png" alt="img" class="w-100 rounded-4">
+                                                             alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/newzeland.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <a href="country-details.html"
                            class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
                             <span class="flat d-center"><img src="assets/img/services/scotland-flag.png"
-                                                             alt="img"></span>
-                            <img src="assets/img/services/scotland.png" alt="img" class="w-100 rounded-4">
+                                                             alt="img" loading="lazy"></span>
+                            <img src="assets/img/services/scotland.png" alt="img" class="w-100 rounded-4" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                                     <a href="visa-details.html" class="black">ওয়ার্ক পারমিট ভিসা</a>
                                 </h3>
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/unseen-icon1.png" alt="img">
+                                    <img src="assets/img/icon/unseen-icon1.png" alt="img" loading="lazy">
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
@@ -285,7 +285,7 @@
                                     <a href="visa-details.html" class="black">স্টুডেন্ট ভিসা</a>
                                 </h3>
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/unseen-icon2.png" alt="img">
+                                    <img src="assets/img/icon/unseen-icon2.png" alt="img" loading="lazy">
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
@@ -304,7 +304,7 @@
                                     <a href="visa-details.html" class="black">মেডিকেল ভিসা</a>
                                 </h3>
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/unseen-icon3.png" alt="img">
+                                    <img src="assets/img/icon/unseen-icon3.png" alt="img" loading="lazy">
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
@@ -323,7 +323,7 @@
                                     <a href="visa-details.html" class="black">টুরিস্ট ভিসা</a>
                                 </h3>
                                 <div class="icon d-center n100-bg radius-circle d-center">
-                                    <img src="assets/img/icon/unseen-icon4.png" alt="img">
+                                    <img src="assets/img/icon/unseen-icon4.png" alt="img" loading="lazy">
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
@@ -344,7 +344,7 @@
                 <div class="row g-6 align-items-center">
                     <div class="col-lg-6">
                         <div class="testimonial-thumb1 mb-md-0 mb-4">
-                            <img src="assets/img/testimonial/testimonial-thumb1.png" alt="img">
+                            <img src="assets/img/testimonial/testimonial-thumb1.png" alt="img" loading="lazy">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -372,7 +372,7 @@
                                         </p>
                                         <!-- Ele -->
                                         <img src="assets/img/testimonial/quote-michael.png" alt="img"
-                                             class="testi-quote">
+                                             class="testi-quote" loading="lazy">
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +406,7 @@
                     <div class="col-md-6 col-lg-6">
                         <div class="picture-dicover-content rounded-4 h-100">
                             <div class="icon rounded-circle d-center bg-white mb-3">
-                                <img src="assets/img/icon/picture-doller.png" alt="img">
+                                <img src="assets/img/icon/picture-doller.png" alt="img" loading="lazy">
                             </div>
                             <h3 class="mb-xxl-4 mb-4 pb-1">
                                 <a href="#" class="black fw-bold">
@@ -422,7 +422,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <div class="picture-thumb1 h-100 rounded-4 overflow-hidden reveal-left">
-                            <img src="assets/img/services/picture-thumb.png" alt="img" class="w-100 h-100 rounded-4">
+                            <img src="assets/img/services/picture-thumb.png" alt="img" class="w-100 h-100 rounded-4" loading="lazy">
                         </div>
                     </div>
                     <div class="col-xl-8">
@@ -452,7 +452,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="best-badge rounded-4 h-100 d-flex align-items-center gap-xl-4 gap-3">
-                            <img src="assets/img/services/badge.png" alt="img">
+                            <img src="assets/img/services/badge.png" alt="img" loading="lazy">
                             <h3>
                                 <a href="visa-offer.html" class="black fw-bold">
                                     Best Awarded Company
@@ -480,7 +480,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="gateway-items rounded-4">
-                                <img src="assets/img/services/gateway-thumb1.png" alt="img" class="w-100 rounded-4">
+                                <img src="assets/img/services/gateway-thumb1.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
                                         <a href="visa-offer.html" class="black">
@@ -495,7 +495,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="gateway-items rounded-4">
-                                <img src="assets/img/services/gateway-thumb2.png" alt="img" class="w-100 rounded-4">
+                                <img src="assets/img/services/gateway-thumb2.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
                                         <a href="visa-offer.html" class="black">
@@ -510,7 +510,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="gateway-items rounded-4">
-                                <img src="assets/img/services/gateway-thumb3.png" alt="img" class="w-100 rounded-4">
+                                <img src="assets/img/services/gateway-thumb3.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
                                         <a href="visa-offer.html" class="black">
@@ -714,7 +714,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="ps-lg-4 faq-thumb1 w-100 reveal-left overflow-hidden">
-                            <img src="assets/img/faq/faq1.png" alt="img" class="w-100">
+                            <img src="assets/img/faq/faq1.png" alt="img" class="w-100" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -740,7 +740,7 @@
                         <div class="col-xl-4 col-md-6 col-sm-6">
                             <div class="news-single-items rounded-4 overflow-hidden style1">
                                 <div class="news-image reveal-left">
-                                    <img src="assets/img/blog/blog-grid1.png" alt="news-img">
+                                    <img src="assets/img/blog/blog-grid1.png" alt="news-img" loading="lazy">
                                 </div>
                                 <div class="news-content border rounded-bottom-4">
                                     <ul
@@ -774,7 +774,7 @@
                         <div class="col-xl-4 col-md-6 col-sm-6">
                             <div class="news-single-items rounded-4 overflow-hidden style1">
                                 <div class="news-image reveal-left">
-                                    <img src="assets/img/blog/blog-grid2.png" alt="news-img">
+                                    <img src="assets/img/blog/blog-grid2.png" alt="news-img" loading="lazy">
                                 </div>
                                 <div class="news-content border rounded-bottom-4">
                                     <ul
@@ -808,7 +808,7 @@
                         <div class="col-xl-4 col-md-6 col-sm-6">
                             <div class="news-single-items rounded-4 overflow-hidden style1">
                                 <div class="news-image reveal-left">
-                                    <img src="assets/img/blog/blog-grid3.png" alt="news-img">
+                                    <img src="assets/img/blog/blog-grid3.png" alt="news-img" loading="lazy">
                                 </div>
                                 <div class="news-content border rounded-bottom-4">
                                     <ul
