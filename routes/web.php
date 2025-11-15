@@ -8,3 +8,6 @@ Route::get('/about-us',[HomeController::class,'about'])->name('about');
 Route::get('/blogs',[HomeController::class,'blogs'])->name('blogs');
 Route::get('/blogs/{slug}',[HomeController::class,'blogsDetails'])->name('blogs.details');
 Route::get('/contact-us',[HomeController::class,'contact'])->name('contact');
+
+require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
