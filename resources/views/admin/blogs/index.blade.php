@@ -10,7 +10,7 @@
                         <h4 class="card-title">All Blogs</h4>
                    </div>
                    <div>
-                        <a href="{{ route('admin.blogs.create') }}" class="btn btn-primary">
+                        <a href="{{ route('backend.blogs.create') }}" class="btn btn-primary">
                              <iconify-icon icon="solar:add-circle-bold-duotone" class="align-middle fs-18 me-1"></iconify-icon>
                              Add Blog
                         </a>
@@ -79,10 +79,10 @@
                                             <td>{{ $blog->created_at->format('d M Y') }}</td>
                                             <td>
                                                  <div class="d-flex gap-2">
-                                                      <a href="{{ route('admin.blogs.edit', $blog->id) }}" class="btn btn-soft-primary btn-sm">
+                                                      <a href="{{ route('backend.blogs.edit', $blog->id) }}" class="btn btn-soft-primary btn-sm">
                                                            <iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon>
                                                       </a>
-                                                      <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" class="d-inline">
+                                                      <form action="{{ route('backend.blogs.destroy', $blog->id) }}" method="POST" class="d-inline">
                                                            @csrf
                                                            @method('DELETE')
                                                            <button type="submit" class="btn btn-soft-danger btn-sm" onclick="return confirm('Are you sure you want to delete this blog?')">

@@ -75,7 +75,7 @@ class BlogController extends Controller
 
         Blog::create($validated);
 
-        return redirect()->route('admin.blogs.index')
+        return redirect()->route('backend.blogs.index')
             ->with('success', 'Blog created successfully.');
     }
 
@@ -138,7 +138,7 @@ class BlogController extends Controller
 
         $blog->update($validated);
 
-        return redirect()->route('admin.blogs.index')
+        return redirect()->route('backend.blogs.index')
             ->with('success', 'Blog updated successfully.');
     }
 
@@ -149,7 +149,7 @@ class BlogController extends Controller
     {
         $blog->delete();
 
-        return redirect()->route('admin.blogs.index')
+        return redirect()->route('backend.blogs.index')
             ->with('success', 'Blog deleted successfully.');
     }
 }

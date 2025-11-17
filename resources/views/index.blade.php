@@ -16,29 +16,7 @@
                             <p class="pra">
                                 যেকোনো দেশের ভিসা, এয়ার টিকেট বা চাকরির অফার লেটার আসল কিনা তা নিশ্চিত করুন। প্রতারণা থেকে বাঁচতে "ভিসাভাই" আছে আপনার পাশে।
                             </p>
-                            <div class="hero-selector">
-                                <div class="selector-items">
-                                    <h4 class="black mb-3">আপনি কোথা থেকে?</h4>
-                                    <select name="flag-select">
-                                        <option value="1">Select</option>
-                                        <option value="2">United Kingdom</option>
-                                        <option value="3">United States</option>
-                                        <option value="4">Canada</option>
-                                        <option value="5">Australia</option>
-                                    </select>
-                                </div>
-                                <div class="selector-items">
-                                    <h4 class="black mb-3">আপনি কোথায় যাচ্ছেন?</h4>
-                                    <select name="flag-select">
-                                        <option value="1">Select</option>
-                                        <option value="2">United Kingdom</option>
-                                        <option value="3">United States</option>
-                                        <option value="4">Canada</option>
-                                        <option value="5">Australia</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <a href="visa.html"
+                            <a href="{{ route('contact') }}"
                                class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
                                 এখনই যাচাই করুন
                                 <i class="fa-solid fa-arrow-right-long last"></i>

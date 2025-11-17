@@ -7,7 +7,7 @@
          <div class="card">
               <div class="card-header d-flex justify-content-between align-items-center">
                    <h4 class="card-title">Create New Blog</h4>
-                   <a href="{{ route('admin.blogs.index') }}" class="btn btn-light">
+                   <a href="{{ route('backend.blogs.index') }}" class="btn btn-light">
                         <iconify-icon icon="solar:arrow-left-bold-duotone" class="align-middle fs-18 me-1"></iconify-icon>
                         Back to List
                    </a>
@@ -24,7 +24,7 @@
                         </div>
                    @endif
 
-                   <form action="{{ route('admin.blogs.store') }}" method="POST" enctype="multipart/form-data">
+                   <form action="{{ route('backend.blogs.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                              <!-- Left Column -->
@@ -151,7 +151,7 @@
                         <div class="row mt-3">
                              <div class="col-12">
                                   <div class="d-flex justify-content-end gap-2">
-                                       <a href="{{ route('admin.blogs.index') }}" class="btn btn-light">Cancel</a>
+                                       <a href="{{ route('backend.blogs.index') }}" class="btn btn-light">Cancel</a>
                                        <button type="submit" class="btn btn-primary">
                                             <iconify-icon icon="solar:check-circle-bold-duotone" class="align-middle fs-18 me-1"></iconify-icon>
                                             Create Blog

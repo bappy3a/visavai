@@ -63,6 +63,7 @@
     <script>
         !function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function d(){a.addEventListener&&a.removeEventListener("load",d),a.media=r||"all"}var i=e.document,a=i.createElement("link");if(n)a.href=n;else return;if("stylesheet"!==(a.rel||"stylesheet"))return;a.rel="stylesheet",a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.addEventListener&&a.addEventListener("load",d),a.onloadcssdefined=function(e){for(var t=a.sheet.cssRules,n=0;n<t.length;n++)if(t[n].media&&t[n].media.mediaText===r){return void e()}setTimeout(function(){a.onloadcssdefined(e)})},"undefined"!=typeof a.sheet&&a.onloadcssdefined&&a.onloadcssdefined(d),o(function(){i.head.appendChild(a)}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
     </script>
+    @yield('css')
 </head>
 
 <body>
@@ -144,7 +145,7 @@
 <script src="{{ asset('assets/js/vanilla-tilt.min.js') }}" defer></script>
 <script src="{{ asset('assets/js/ajax-form.js') }}" defer></script>
 <!-- JS end here -->
-
+@yield('js')
 <!--Start of Tawk.to Script - Load asynchronously after page load -->
 <script>
     window.addEventListener('load', function() {

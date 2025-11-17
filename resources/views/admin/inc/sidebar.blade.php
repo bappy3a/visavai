@@ -1,12 +1,12 @@
 <div class="main-nav">
     <!-- Sidebar Logo -->
     <div class="logo-box">
-         <a href="{{ route('admin.index') }}" class="logo-dark">
+         <a href="{{ route('backend.index') }}" class="logo-dark">
               <img src="{{ asset('assets/img/logo/favs.png') }}" class="logo-sm" alt="logo sm">
               <img src="{{ asset('assets/img/logo/logo.webp') }}" class="logo-lg" alt="logo dark">
          </a>
 
-         <a href="{{ route('admin.index') }}" class="logo-light">
+         <a href="{{ route('backend.index') }}" class="logo-light">
               <img src="{{ asset('assets/img/logo/favs.png') }}" class="logo-sm" alt="logo sm">
               <img src="{{ asset('assets/img/logo/logo.webp') }}" class="logo-lg" alt="logo light">
          </a>
@@ -23,7 +23,7 @@
               <li class="menu-title">General</li>
 
               <li class="nav-item">
-                   <a class="nav-link" href="{{ route('admin.index') }}">
+                   <a class="nav-link" href="{{ route('backend.index') }}">
                         <span class="nav-icon">
                              <iconify-icon icon="solar:widget-5-bold-duotone"></iconify-icon>
                         </span>
@@ -41,10 +41,10 @@
                    <div class="collapse" id="sidebarBlogs">
                         <ul class="nav sub-navbar-nav">
                              <li class="sub-nav-item">
-                                  <a class="sub-nav-link" href="{{ route('admin.blog-categories.index') }}">Category</a>
+                                  <a class="sub-nav-link" href="{{ route('backend.blog-categories.index') }}">Category</a>
                              </li>
                              <li class="sub-nav-item">
-                                  <a class="sub-nav-link" href="{{ route('admin.blogs.index') }}">Blog List</a>
+                                  <a class="sub-nav-link" href="{{ route('backend.blogs.index') }}">Blog List</a>
                              </li>
                         </ul>
                    </div>

@@ -154,9 +154,12 @@
 
                              <div class="dropdown-divider my-1"></div>
 
-                             <a class="dropdown-item text-danger" href="auth-signin.html">
-                                  <i class="bx bx-log-out fs-18 align-middle me-1"></i><span class="align-middle">Logout</span>
-                             </a>
+                             <form method="POST" action="{{ route('logout') }}" class="d-inline">
+                                  @csrf
+                                  <button type="submit" class="dropdown-item text-danger border-0 bg-transparent w-100 text-start">
+                                       <i class="bx bx-log-out fs-18 align-middle me-1"></i><span class="align-middle">Logout</span>
+                                  </button>
+                             </form>
                         </div>
                    </div>
               </div>

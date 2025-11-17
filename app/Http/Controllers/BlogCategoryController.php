@@ -51,7 +51,7 @@ class BlogCategoryController extends Controller
 
         BlogCategory::create($validated);
 
-        return redirect()->route('admin.blog-categories.index')
+        return redirect()->route('backend.blog-categories.index')
             ->with('success', 'Blog category created successfully.');
     }
 
@@ -86,7 +86,7 @@ class BlogCategoryController extends Controller
 
         $blogCategory->update($validated);
 
-        return redirect()->route('admin.blog-categories.index')
+        return redirect()->route('backend.blog-categories.index')
             ->with('success', 'Blog category updated successfully.');
     }
 
@@ -97,7 +97,7 @@ class BlogCategoryController extends Controller
     {
         $blogCategory->delete();
 
-        return redirect()->route('admin.blog-categories.index')
+        return redirect()->route('backend.blog-categories.index')
             ->with('success', 'Blog category deleted successfully.');
     }
 }

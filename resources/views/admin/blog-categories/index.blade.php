@@ -83,7 +83,7 @@
                                                               data-meta-image="{{ $category->meta_image }}">
                                                            <iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon>
                                                       </button>
-                                                      <form action="{{ route('admin.blog-categories.destroy', $category->id) }}" method="POST" class="d-inline delete-form">
+                                                      <form action="{{ route('backend.blog-categories.destroy', $category->id) }}" method="POST" class="d-inline delete-form">
                                                            @csrf
                                                            @method('DELETE')
                                                            <button type="submit" class="btn btn-soft-danger btn-sm" onclick="return confirm('Are you sure you want to delete this category?')">
@@ -121,7 +121,7 @@
                     <h5 class="modal-title" id="createCategoryModalLabel">Create Blog Category</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
-               <form action="{{ route('admin.blog-categories.store') }}" method="POST">
+               <form action="{{ route('backend.blog-categories.store') }}" method="POST">
                     @csrf
                     <div class="modal-body">
                          <div class="row">
