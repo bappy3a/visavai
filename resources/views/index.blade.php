@@ -3,150 +3,151 @@
 @section('title','Home')
 
 @section('structured_data')
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Visavai",
-  "url": "{{ url('/') }}",
-  "logo": "{{ asset('assets/img/logo/logo.webp') }}",
-  "description": "Professional visa verification, air ticket verification, and job offer letter verification services. Verify all your visa-related documents with Visavai.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "availableLanguage": ["Bengali", "English"]
-  },
-  "sameAs": [],
-  "areaServed": {
-    "@type": "Country",
-    "name": "Bangladesh"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Document Verification Service",
-  "provider": {
-    "@type": "Organization",
-    "name": "Visavai"
-  },
-  "description": "Professional visa verification, air ticket verification, and job offer letter verification services",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Bangladesh"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Verification Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Visa Verification",
-          "description": "Verify visa documents, check visa authenticity, and detect fake visas"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Air Ticket Verification",
-          "description": "Verify air tickets and check ticket authenticity"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Offer Letter Verification",
-          "description": "Verify job offer letters and check document authenticity"
-        }
-      }
+@php
+$organizationSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Organization',
+    'name' => 'Visavai',
+    'url' => url('/'),
+    'logo' => asset('assets/img/logo/logo.webp'),
+    'description' => 'Professional visa verification, air ticket verification, and job offer letter verification services. Verify all your visa-related documents with Visavai.',
+    'contactPoint' => [
+        '@type' => 'ContactPoint',
+        'contactType' => 'Customer Service',
+        'availableLanguage' => ['Bengali', 'English']
+    ],
+    'sameAs' => [],
+    'areaServed' => [
+        '@type' => 'Country',
+        'name' => 'Bangladesh'
     ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "আপনারা কিভাবে ভিসা যাচাই করেন?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "আমরা আপনার ভিসা নম্বর, পাসপোর্ট নম্বর এবং অন্যান্য তথ্য নিয়ে সরাসরি সংশ্লিষ্ট দেশের ইমিগ্রেশন বা এম্বাসির অনলাইন পোর্টালে যাচাই করি।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "যাচাই করতে কত সময় লাগে?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "প্যাকেজের উপর নির্ভর করে, সাধারণত আমরা ১২ থেকে ২৪ ঘণ্টার মধ্যে ভেরিফিকেশন রিপোর্ট প্রদান করি।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "আমার ডকুমেন্ট কি আপনাদের কাছে নিরাপদ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "১০০% নিরাপদ। আপনার ব্যক্তিগত তথ্যের গোপনীয়তা রক্ষা করা আমাদের সর্বোচ্চ অগ্রাধিকার। কাজ শেষে আমরা সকল তথ্য সার্ভার থেকে মুছে ফেলি।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ভিসা যাচাই (Visa Verification) করতে কি কি ডকুমেন্ট লাগে?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ভিসা যাচাই (Visa Verification) এর জন্য আপনার ভিসা কপি, পাসপোর্ট নম্বর, ভিসা নম্বর এবং ভিসা ইস্যুর তারিখ দরকার। এয়ার টিকেট যাচাই (Air Ticket Verification) এর জন্য টিকেট নম্বর এবং পাসপোর্ট নম্বর প্রয়োজন। অফার লেটার যাচাই (Offer Letter Verification) এর জন্য অফার লেটার এবং কোম্পানির তথ্য প্রয়োজন।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "কি ধরনের ভিসা যাচাই (Visa Verification) করা যায়?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "আমরা সব ধরনের ভিসা যাচাই (Visa Verification) করি: ওয়ার্ক পারমিট ভিসা যাচাই (Work Permit Visa Verification), স্টুডেন্ট ভিসা যাচাই (Student Visa Verification), টুরিস্ট ভিসা যাচাই (Tourist Visa Verification), মেডিকেল ভিসা যাচাই (Medical Visa Verification), বিজনেস ভিসা যাচাই এবং অন্যান্য সব ধরনের ভিসা ডকুমেন্ট যাচাইকরণ সেবা প্রদান করি।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ভিসা যাচাই (Visa Verification) এর খরচ কত?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ভিসা যাচাই (Visa Verification) রিপোর্ট কতটা নির্ভরযোগ্য?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "আমাদের ভিসা যাচাই (Visa Verification) রিপোর্ট ১০০% নির্ভরযোগ্য। আমরা সরাসরি এম্বাসি এবং এয়ারলাইনসের অফিসিয়াল ডাটাবেস থেকে তথ্য যাচাই করি। ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন।"
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "{{ url('/') }}"
-    }
-  ]
-}
-</script>
+];
+
+$serviceSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Service',
+    'serviceType' => 'Document Verification Service',
+    'provider' => [
+        '@type' => 'Organization',
+        'name' => 'Visavai'
+    ],
+    'description' => 'Professional visa verification, air ticket verification, and job offer letter verification services',
+    'areaServed' => [
+        '@type' => 'Country',
+        'name' => 'Bangladesh'
+    ],
+    'hasOfferCatalog' => [
+        '@type' => 'OfferCatalog',
+        'name' => 'Verification Services',
+        'itemListElement' => [
+            [
+                '@type' => 'Offer',
+                'itemOffered' => [
+                    '@type' => 'Service',
+                    'name' => 'Visa Verification',
+                    'description' => 'Verify visa documents, check visa authenticity, and detect fake visas'
+                ]
+            ],
+            [
+                '@type' => 'Offer',
+                'itemOffered' => [
+                    '@type' => 'Service',
+                    'name' => 'Air Ticket Verification',
+                    'description' => 'Verify air tickets and check ticket authenticity'
+                ]
+            ],
+            [
+                '@type' => 'Offer',
+                'itemOffered' => [
+                    '@type' => 'Service',
+                    'name' => 'Offer Letter Verification',
+                    'description' => 'Verify job offer letters and check document authenticity'
+                ]
+            ]
+        ]
+    ]
+];
+
+$faqSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => [
+        [
+            '@type' => 'Question',
+            'name' => 'আপনারা কিভাবে ভিসা যাচাই করেন?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'আমরা আপনার ভিসা নম্বর, পাসপোর্ট নম্বর এবং অন্যান্য তথ্য নিয়ে সরাসরি সংশ্লিষ্ট দেশের ইমিগ্রেশন বা এম্বাসির অনলাইন পোর্টালে যাচাই করি।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'যাচাই করতে কত সময় লাগে?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'প্যাকেজের উপর নির্ভর করে, সাধারণত আমরা ১২ থেকে ২৪ ঘণ্টার মধ্যে ভেরিফিকেশন রিপোর্ট প্রদান করি।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'আমার ডকুমেন্ট কি আপনাদের কাছে নিরাপদ?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => '১০০% নিরাপদ। আপনার ব্যক্তিগত তথ্যের গোপনীয়তা রক্ষা করা আমাদের সর্বোচ্চ অগ্রাধিকার। কাজ শেষে আমরা সকল তথ্য সার্ভার থেকে মুছে ফেলি।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'ভিসা যাচাই (Visa Verification) করতে কি কি ডকুমেন্ট লাগে?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'ভিসা যাচাই (Visa Verification) এর জন্য আপনার ভিসা কপি, পাসপোর্ট নম্বর, ভিসা নম্বর এবং ভিসা ইস্যুর তারিখ দরকার। এয়ার টিকেট যাচাই (Air Ticket Verification) এর জন্য টিকেট নম্বর এবং পাসপোর্ট নম্বর প্রয়োজন। অফার লেটার যাচাই (Offer Letter Verification) এর জন্য অফার লেটার এবং কোম্পানির তথ্য প্রয়োজন।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'কি ধরনের ভিসা যাচাই (Visa Verification) করা যায়?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'আমরা সব ধরনের ভিসা যাচাই (Visa Verification) করি: ওয়ার্ক পারমিট ভিসা যাচাই (Work Permit Visa Verification), স্টুডেন্ট ভিসা যাচাই (Student Visa Verification), টুরিস্ট ভিসা যাচাই (Tourist Visa Verification), মেডিকেল ভিসা যাচাই (Medical Visa Verification), বিজনেস ভিসা যাচাই এবং অন্যান্য সব ধরনের ভিসা ডকুমেন্ট যাচাইকরণ সেবা প্রদান করি।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'ভিসা যাচাই (Visa Verification) এর খরচ কত?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।'
+            ]
+        ],
+        [
+            '@type' => 'Question',
+            'name' => 'ভিসা যাচাই (Visa Verification) রিপোর্ট কতটা নির্ভরযোগ্য?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'আমাদের ভিসা যাচাই (Visa Verification) রিপোর্ট ১০০% নির্ভরযোগ্য। আমরা সরাসরি এম্বাসি এবং এয়ারলাইনসের অফিসিয়াল ডাটাবেস থেকে তথ্য যাচাই করি। ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন।'
+            ]
+        ]
+    ]
+];
+
+$breadcrumbSchema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => [
+        [
+            '@type' => 'ListItem',
+            'position' => 1,
+            'name' => 'Home',
+            'item' => url('/')
+        ]
+    ]
+];
+@endphp
+<script type="application/ld+json">{!! json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+<script type="application/ld+json">{!! json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+<script type="application/ld+json">{!! json_encode($faqSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+<script type="application/ld+json">{!! json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 @endsection
 
 @section('content')
@@ -158,7 +159,7 @@
                     <div class="col-lg-6">
                         <div class="hero-content-version1">
                             <h1 class="black">
-                                <span class="p1-clr d-block">ভিসা যাচাই (Visa Verification)</span>এবং ডকুমেন্ট যাচাইকরণ সেবা
+                                <span class="p1-clr d-block">ভিসা ও ডকুমেন্ট </span>যাচাই করুন সহজে
                             </h1>
                             <p class="pra">
                                 যেকোনো দেশের ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) বা চাকরির অফার লেটার যাচাই (Offer Letter Verification) করুন সহজে। ভিসা ডকুমেন্ট যাচাই, ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভ্রমণ ডকুমেন্ট যাচাইকরণের জন্য "ভিসাভাই" আছে আপনার পাশে। প্রতারণা থেকে বাঁচতে এখনই আপনার ভিসা, টিকেট বা অফার লেটার যাচাই করুন।
