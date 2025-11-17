@@ -146,6 +146,16 @@
     });
 </script>
 <!--End of Tawk.to Script-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RP4ERWJ9C8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RP4ERWJ9C8');
+</script>
+<!-- End of Google tag (gtag.js) -->
 </body>
 
 </html>
