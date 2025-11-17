@@ -59,6 +59,15 @@
                    </a>
               </li>
 
+              <li class="nav-item">
+                   <a class="nav-link" href="{{ route('backend.users.index') }}">
+                        <span class="nav-icon">
+                             <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"></iconify-icon>
+                        </span>
+                        <span class="nav-text"> Users </span>
+                   </a>
+              </li>
+
          </ul>
     </div>
 </div>
