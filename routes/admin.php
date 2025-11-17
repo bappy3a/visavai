@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('backend')->middleware(['auth', \App\Http\Middleware\RequirePasswordChange::class])->group(function () {
@@ -13,4 +14,6 @@ Route::prefix('backend')->middleware(['auth', \App\Http\Middleware\RequirePasswo
     Route::resource('blogs', BlogController::class)->names('backend.blogs');
     Route::resource('contacts', ContactController::class)->names('backend.contacts')->only(['index', 'show', 'destroy']);
     Route::resource('users', UserController::class)->names('backend.users');
+    Route::get('/profile', [ProfileController::class, 'show'])->name('backend.profile');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('backend.profile.update');
 });

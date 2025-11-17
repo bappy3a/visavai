@@ -135,21 +135,8 @@
                         <div class="dropdown-menu dropdown-menu-end">
                              <!-- item-->
                              <h6 class="dropdown-header">Welcome {{ $user->name }}!</h6>
-                             <a class="dropdown-item" href="pages-profile.html">
-                                  <i class="bx bx-user-circle text-muted fs-18 align-middle me-1"></i><span class="align-middle">Profile</span>
-                             </a>
-                             <a class="dropdown-item" href="apps-chat.html">
-                                  <i class="bx bx-message-dots text-muted fs-18 align-middle me-1"></i><span class="align-middle">Messages</span>
-                             </a>
-
-                             <a class="dropdown-item" href="pages-pricing.html">
-                                  <i class="bx bx-wallet text-muted fs-18 align-middle me-1"></i><span class="align-middle">Pricing</span>
-                             </a>
-                             <a class="dropdown-item" href="pages-faqs.html">
-                                  <i class="bx bx-help-circle text-muted fs-18 align-middle me-1"></i><span class="align-middle">Help</span>
-                             </a>
-                             <a class="dropdown-item" href="auth-lock-screen.html">
-                                  <i class="bx bx-lock text-muted fs-18 align-middle me-1"></i><span class="align-middle">Lock screen</span>
+                             <a class="dropdown-item" href="{{ route('backend.profile') }}">
+                                  <iconify-icon icon="solar:user-circle-bold-duotone" class="text-muted fs-18 align-middle me-1"></iconify-icon><span class="align-middle">Profile</span>
                              </a>
 
                              <div class="dropdown-divider my-1"></div>
@@ -157,7 +144,7 @@
                              <form method="POST" action="{{ route('logout') }}" class="d-inline">
                                   @csrf
                                   <button type="submit" class="dropdown-item text-danger border-0 bg-transparent w-100 text-start">
-                                       <i class="bx bx-log-out fs-18 align-middle me-1"></i><span class="align-middle">Logout</span>
+                                       <iconify-icon icon="solar:logout-2-bold-duotone" class="fs-18 align-middle me-1"></iconify-icon><span class="align-middle">Logout</span>
                                   </button>
                              </form>
                         </div>
