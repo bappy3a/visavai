@@ -28,6 +28,11 @@ class AuthController extends Controller
         if (Auth::attempt($credentials, $request->boolean('remember'))) {
             $request->session()->regenerate();
 
+            // Redirect to password change if user has default password
+            if (Auth::user()->hasDefaultPassword()) {
+                return redirect()->route('password.change');
+            }
+
             return redirect()->intended(route('backend.index'));
         }
 

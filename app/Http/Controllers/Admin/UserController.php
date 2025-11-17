@@ -36,12 +36,12 @@ class UserController extends Controller
     public function store(StoreUserRequest $request): RedirectResponse
     {
         $validated = $request->validated();
-        $validated['password'] = Hash::make($validated['password']);
+        $validated['password'] = Hash::make('VisaVai2025');
 
         User::create($validated);
 
         return redirect()->route('backend.users.index')
-            ->with('success', 'User created successfully.');
+            ->with('success', 'User created successfully with default password.');
     }
 
     /**

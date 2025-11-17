@@ -38,15 +38,8 @@
                                        <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required>
                                   </div>
 
-                                  <div class="mb-3">
-                                       <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                                       <input type="password" class="form-control" id="password" name="password" required>
-                                       <small class="text-muted">Password must be at least 8 characters long.</small>
-                                  </div>
-
-                                  <div class="mb-3">
-                                       <label for="password_confirmation" class="form-label">Confirm Password <span class="text-danger">*</span></label>
-                                       <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required>
+                                  <div class="alert alert-info">
+                                       <strong>Default Password:</strong> New users will be created with the default password <strong>VisaVai2025</strong>. They will be required to change it on their first login.
                                   </div>
 
                                   <div class="mb-3">

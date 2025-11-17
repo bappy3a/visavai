@@ -36,8 +36,10 @@
 
                     <div class="col-xxl-5 d-none d-xxl-flex">
                          <div class="card h-100 mb-0 overflow-hidden">
-                              <div class="d-flex flex-column h-100">
-                                   <img src="{{ asset('admin/assets/images/small/img-10.jpg') }}" alt="" class="w-100 h-100">
+                              <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                                   <dotlottie-wc
+                                        src="https://lottie.host/cae6ee86-7baf-4441-9b89-ece435e693a3/clSqYzdxZW.lottie"
+                                        style="width: 800px;height: auto" autoplay loop></dotlottie-wc>
                               </div>
                          </div>
                     </div>
@@ -50,6 +52,8 @@
 
      <!-- App Javascript (Require in all Page) -->
      <script src="{{ asset('admin/assets/js/app.js') }}"></script>
+     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
 
 </body>
+
 </html>
