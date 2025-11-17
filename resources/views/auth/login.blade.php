@@ -19,7 +19,7 @@
               <p class="text-muted mt-1 mb-3">Enter your email address and password to access dashboard.</p>
 
               <div class="mb-2">
-                   <form action="{{ route('login') }}" method="POST" class="authentication-form">
+                   <form action="{{ route('login.submit') }}" method="POST" class="authentication-form">
                         @csrf
                         <div class="mb-3">
                              <label class="form-label" for="example-email">Email</label>

@@ -4,5 +4,5 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::post('/login', [AuthController::class, 'authenticate'])->name('login');
+Route::post('/login', [AuthController::class, 'authenticate'])->name('login.submit');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
