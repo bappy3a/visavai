@@ -2,6 +2,153 @@
 
 @section('title','Home')
 
+@section('structured_data')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Visavai",
+  "url": "{{ url('/') }}",
+  "logo": "{{ asset('assets/img/logo/logo.webp') }}",
+  "description": "Professional visa verification, air ticket verification, and job offer letter verification services. Verify all your visa-related documents with Visavai.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "availableLanguage": ["Bengali", "English"]
+  },
+  "sameAs": [],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Bangladesh"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Document Verification Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "Visavai"
+  },
+  "description": "Professional visa verification, air ticket verification, and job offer letter verification services",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Bangladesh"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Verification Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Visa Verification",
+          "description": "Verify visa documents, check visa authenticity, and detect fake visas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Air Ticket Verification",
+          "description": "Verify air tickets and check ticket authenticity"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Offer Letter Verification",
+          "description": "Verify job offer letters and check document authenticity"
+        }
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "আপনারা কিভাবে ভিসা যাচাই করেন?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "আমরা আপনার ভিসা নম্বর, পাসপোর্ট নম্বর এবং অন্যান্য তথ্য নিয়ে সরাসরি সংশ্লিষ্ট দেশের ইমিগ্রেশন বা এম্বাসির অনলাইন পোর্টালে যাচাই করি।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "যাচাই করতে কত সময় লাগে?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "প্যাকেজের উপর নির্ভর করে, সাধারণত আমরা ১২ থেকে ২৪ ঘণ্টার মধ্যে ভেরিফিকেশন রিপোর্ট প্রদান করি।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "আমার ডকুমেন্ট কি আপনাদের কাছে নিরাপদ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "১০০% নিরাপদ। আপনার ব্যক্তিগত তথ্যের গোপনীয়তা রক্ষা করা আমাদের সর্বোচ্চ অগ্রাধিকার। কাজ শেষে আমরা সকল তথ্য সার্ভার থেকে মুছে ফেলি।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভিসা যাচাই (Visa Verification) করতে কি কি ডকুমেন্ট লাগে?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ভিসা যাচাই (Visa Verification) এর জন্য আপনার ভিসা কপি, পাসপোর্ট নম্বর, ভিসা নম্বর এবং ভিসা ইস্যুর তারিখ দরকার। এয়ার টিকেট যাচাই (Air Ticket Verification) এর জন্য টিকেট নম্বর এবং পাসপোর্ট নম্বর প্রয়োজন। অফার লেটার যাচাই (Offer Letter Verification) এর জন্য অফার লেটার এবং কোম্পানির তথ্য প্রয়োজন।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "কি ধরনের ভিসা যাচাই (Visa Verification) করা যায়?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "আমরা সব ধরনের ভিসা যাচাই (Visa Verification) করি: ওয়ার্ক পারমিট ভিসা যাচাই (Work Permit Visa Verification), স্টুডেন্ট ভিসা যাচাই (Student Visa Verification), টুরিস্ট ভিসা যাচাই (Tourist Visa Verification), মেডিকেল ভিসা যাচাই (Medical Visa Verification), বিজনেস ভিসা যাচাই এবং অন্যান্য সব ধরনের ভিসা ডকুমেন্ট যাচাইকরণ সেবা প্রদান করি।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভিসা যাচাই (Visa Verification) এর খরচ কত?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ভিসা যাচাই (Visa Verification) রিপোর্ট কতটা নির্ভরযোগ্য?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "আমাদের ভিসা যাচাই (Visa Verification) রিপোর্ট ১০০% নির্ভরযোগ্য। আমরা সরাসরি এম্বাসি এবং এয়ারলাইনসের অফিসিয়াল ডাটাবেস থেকে তথ্য যাচাই করি। ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন।"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ url('/') }}"
+    }
+  ]
+}
+</script>
+@endsection
+
 @section('content')
     <main>
         <!-- Banner Section Start -->
@@ -11,10 +158,10 @@
                     <div class="col-lg-6">
                         <div class="hero-content-version1">
                             <h1 class="black">
-                                <span class="p1-clr d-block">ভিসা ও ডকুমেন্ট </span>যাচাই করুন সহজে
+                                <span class="p1-clr d-block">ভিসা যাচাই (Visa Verification)</span>এবং ডকুমেন্ট যাচাইকরণ সেবা
                             </h1>
                             <p class="pra">
-                                যেকোনো দেশের ভিসা, এয়ার টিকেট বা চাকরির অফার লেটার আসল কিনা তা নিশ্চিত করুন। প্রতারণা থেকে বাঁচতে "ভিসাভাই" আছে আপনার পাশে।
+                                যেকোনো দেশের ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) বা চাকরির অফার লেটার যাচাই (Offer Letter Verification) করুন সহজে। ভিসা ডকুমেন্ট যাচাই, ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভ্রমণ ডকুমেন্ট যাচাইকরণের জন্য "ভিসাভাই" আছে আপনার পাশে। প্রতারণা থেকে বাঁচতে এখনই আপনার ভিসা, টিকেট বা অফার লেটার যাচাই করুন।
                             </p>
                             <a href="{{ route('contact') }}"
                                class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
@@ -66,7 +213,7 @@
                             </div>
                             <div class="cont">
                                 <h3 class="black mb-2">ভিসা যাচাই (Visa Verification)</h3>
-                                <p class=" fs-eight pra">আপনার ভিসাটি আসল কিনা, এম্বাসি থেকে ইস্যু হয়েছে কিনা বা কোনো নকল সীল আছে কিনা, তা আমরা যাচাই করে নিশ্চিত করি।</p>
+                                <p class=" fs-eight pra">আপনার ভিসা যাচাই (Visa Verification) করুন সহজে। ভিসা ডকুমেন্ট যাচাই, ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন। আপনার ভিসাটি আসল কিনা, এম্বাসি থেকে ইস্যু হয়েছে কিনা বা কোনো নকল সীল আছে কিনা, তা আমরা সরাসরি এম্বাসি ডাটাবেস থেকে যাচাই করে নিশ্চিত করি।</p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +229,7 @@
                             </div>
                             <div class="cont">
                                 <h3 class="black mb-2">এয়ার টিকেট যাচাই (Air Ticket Verification)</h3>
-                                <p class=" fs-eight pra">আপনার বুকিং কনফার্ম কিনা, এয়ারলাইনস সিস্টেমে আপনার নামে টিকেট ইস্যু হয়েছে কিনা তা মুহূর্তেই যাচাই করুন।</p>
+                                <p class=" fs-eight pra">এয়ার টিকেট যাচাই (Air Ticket Verification) করুন এবং নকল টিকেট প্রতারণা থেকে বাঁচুন। আপনার বুকিং কনফার্ম কিনা, এয়ারলাইনস সিস্টেমে আপনার নামে টিকেট ইস্যু হয়েছে কিনা, টিকেট নম্বর বৈধ কিনা তা মুহূর্তেই যাচাই করুন। টিকেট অথেনটিসিটি চেক এবং ট্রাভেল ডকুমেন্ট যাচাইকরণ সেবা।</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +245,7 @@
                             </div>
                             <div class="cont">
                                 <h3 class="black mb-2">অফার লেটার যাচাই (Offer Letter Verification)</h3>
-                                <p class=" fs-eight pra">বিদেশি কোম্পানি বা ইউনিভার্সিটির অফার লেটারটি বৈধ কিনা তা যাচাই করে আপনার ভবিষ্যৎ সুরক্ষিত করুন।</p>
+                                <p class=" fs-eight pra">অফার লেটার যাচাই (Offer Letter Verification) করুন এবং চাকরি প্রতারণা থেকে নিরাপদ থাকুন। বিদেশি কোম্পানি বা ইউনিভার্সিটির অফার লেটারটি বৈধ কিনা, কোম্পানিটি রেজিস্টার্ড কিনা, অফার লেটার আসল কিনা তা যাচাই করে আপনার ভবিষ্যৎ সুরক্ষিত করুন। জব অফার লেটার যাচাইকরণ এবং ডকুমেন্ট ভেরিফিকেশন সেবা।</p>
                             </div>
                         </div>
                     </div>
@@ -117,7 +264,7 @@
                                         প্রতারণা এড়ান, নিশ্চিন্তে ভ্রমণ করুন
                                     </h2>
                                     <p class="fs-six pra">
-                                        প্রতি বছর হাজার হাজার বাংলাদেশী মানুষ নকল ভিসা, ভুয়া টিকেট বা জাল অফার লেটারের কারণে প্রতারিত হন। "ভিসাভাই" এর লক্ষ্য হলো এই প্রতারণা চক্র বন্ধ করা। আমরা সরাসরি এম্বাসি ও এয়ারলাইনস এর ডাটাবেসের সাথে আপনার তথ্য যাচাই করে শতভাগ সঠিক রিপোর্ট প্রদান করি।
+                                        প্রতি বছর হাজার হাজার বাংলাদেশী মানুষ নকল ভিসা, ভুয়া টিকেট বা জাল অফার লেটারের কারণে প্রতারিত হন। "ভিসাভাই" এর লক্ষ্য হলো এই প্রতারণা চক্র বন্ধ করা। আমরা সরাসরি এম্বাসি ও এয়ারলাইনস এর ডাটাবেসের সাথে আপনার তথ্য যাচাই করে শতভাগ সঠিক রিপোর্ট প্রদান করি। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification), এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের প্রফেশনাল ডকুমেন্ট যাচাইকরণ সেবা নিন। ভিসা সত্যতা যাচাই, নকল ভিসা চেক, ভিসা অথেনটিসিটি চেক এবং ট্রাভেল ডকুমেন্ট যাচাইকরণে আমরা আপনার বিশ্বস্ত সঙ্গী।
                                     </p>
                                 </div>
                                 <div class="about-information d-grid gap-xl-3 gap-3 white-bg">
@@ -135,7 +282,7 @@
                                         <h4 class="black">ভিসা যাচাইয়ে আপনার বিশ্বস্ত সঙ্গী</h4>
                                     </div>
                                 </div>
-                                <a href="visa-details.html"
+                                <a href="{{ route('about') }}"
                                    class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
                                     আরও জানুন
                                     <i class="fa-solid fa-arrow-right-long last"></i>
@@ -212,7 +359,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-lg-5 mt-4">
-                    <a href="country.html"
+                    <a href="{{ route('blogs') }}"
                        class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-5 p2-bg">
                         View More
                         <i class="fas fa-arrow-right last"></i>
@@ -248,9 +395,9 @@
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
-                                কাজের ভিসার সত্যতা যাচাই করুন। কোম্পানিটি বৈধ কিনা এবং আপনার নামে ওয়ার্ক পারমিট ইস্যু হয়েছে কিনা তা নিশ্চিত হোন।
+                                ওয়ার্ক পারমিট ভিসা যাচাই (Work Permit Visa Verification) করুন এবং চাকরি প্রতারণা থেকে বাঁচুন। কাজের ভিসার সত্যতা যাচাই করুন। কোম্পানিটি বৈধ কিনা, আপনার নামে ওয়ার্ক পারমিট ইস্যু হয়েছে কিনা, ভিসা নম্বর সঠিক কিনা তা নিশ্চিত হোন। ভিসা ডকুমেন্ট যাচাই এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের সেবা নিন।
                             </p>
-                            <a href="visa-details.html"
+                            <a href="{{ route('contact') }}"
                                class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
                                 View More <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -267,9 +414,9 @@
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
-                                ইউনিভার্সিটির অফার লেটার ও স্টুডেন্ট ভিসা ফাইলে কোনো গরমিল আছে কিনা তা প্রফেশনালভাবে চেক করে নিন।
+                                স্টুডেন্ট ভিসা যাচাই (Student Visa Verification) করুন এবং শিক্ষা প্রতারণা থেকে নিরাপদ থাকুন। ইউনিভার্সিটির অফার লেটার ও স্টুডেন্ট ভিসা ফাইলে কোনো গরমিল আছে কিনা, ভিসা বৈধ কিনা, ইউনিভার্সিটি রেজিস্টার্ড কিনা তা প্রফেশনালভাবে চেক করে নিন। ভিসা সত্যতা যাচাই এবং ডকুমেন্ট ভেরিফিকেশন সেবা।
                             </p>
-                            <a href="visa-details.html"
+                            <a href="{{ route('contact') }}"
                                class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
                                 View More <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -286,9 +433,9 @@
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
-                                চিকিৎসার জন্য বিদেশ ভ্রমণের ভিসা ও হাসপাতালের অ্যাপয়েন্টমেন্ট লেটার যাচাই করে মানসিক চাপমুক্ত থাকুন।
+                                মেডিকেল ভিসা যাচাই (Medical Visa Verification) করুন এবং চিকিৎসা প্রতারণা থেকে বাঁচুন। চিকিৎসার জন্য বিদেশ ভ্রমণের ভিসা ও হাসপাতালের অ্যাপয়েন্টমেন্ট লেটার যাচাই করে মানসিক চাপমুক্ত থাকুন। ভিসা যাচাই (Visa Verification) এবং মেডিকেল ডকুমেন্ট যাচাইকরণ সেবা।
                             </p>
-                            <a href="visa-details.html"
+                            <a href="{{ route('contact') }}"
                                class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
                                 View More <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -305,9 +452,9 @@
                                 </div>
                             </div>
                             <p class=" fs-eight pra mb-4">
-                                ভ্রমণের ভিসা, হোটেল বুকিং এবং রিটার্ন টিকেট—সবকিছু আসল কিনা তা যাচাই করে আপনার ছুটি উপভোগ করুন।
+                                টুরিস্ট ভিসা যাচাই (Tourist Visa Verification) করুন এবং নিরাপদ ভ্রমণ করুন। ভ্রমণের ভিসা, হোটেল বুকিং এবং রিটার্ন টিকেট—সবকিছু আসল কিনা তা যাচাই করে আপনার ছুটি উপভোগ করুন। ভিসা যাচাই (Visa Verification), ট্রাভেল ডকুমেন্ট যাচাইকরণ এবং ভিসা অথেনটিসিটি চেক সেবা।
                             </p>
-                            <a href="visa-details.html"
+                            <a href="{{ route('contact') }}"
                                class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
                                 View More <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -391,7 +538,7 @@
                                     সন্দেহ হলেই যাচাই করুন, নিরাপদ থাকুন
                                 </a>
                             </h3>
-                            <a href="contact.html"
+                            <a href="{{ route('contact') }}"
                                class="common-btn box-style first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 blackbg">
                                 যোগাযোগ করুন
                                 <i class="fa-solid fa-arrow-right-long last"></i>
@@ -432,7 +579,7 @@
                         <div class="best-badge rounded-4 h-100 d-flex align-items-center gap-xl-4 gap-3">
                             <img src="assets/img/services/badge.png" alt="img" loading="lazy">
                             <h3>
-                                <a href="visa-offer.html" class="black fw-bold">
+                                <a href="{{ route('about') }}" class="black fw-bold">
                                     Best Awarded Company
                                 </a>
                             </h3>
@@ -461,7 +608,7 @@
                                 <img src="assets/img/services/gateway-thumb1.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
-                                        <a href="visa-offer.html" class="black">
+                                        <a href="{{ route('contact') }}" class="black">
                                             সঠিকতা যাচাই
                                         </a>
                                     </h3>
@@ -476,7 +623,7 @@
                                 <img src="assets/img/services/gateway-thumb2.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
-                                        <a href="visa-offer.html" class="black">
+                                        <a href="{{ route('contact') }}" class="black">
                                             এম্বাসি অ্যাপয়েন্টমেন্ট
                                         </a>
                                     </h3>
@@ -491,7 +638,7 @@
                                 <img src="assets/img/services/gateway-thumb3.png" alt="img" class="w-100 rounded-4" loading="lazy">
                                 <div class="content rounded-4 bg-white">
                                     <h3 class="mb-xxl-3 mb-2">
-                                        <a href="visa-offer.html" class="black">
+                                        <a href="{{ route('contact') }}" class="black">
                                             ডকুমেন্ট প্রস্তুতি
                                         </a>
                                     </h3>
@@ -541,7 +688,7 @@
                                             <i class="fa-solid fa-angles-right black"></i> ইমেইল সাপোর্ট
                                         </li>
                                     </ul>
-                                    <a href="contact.html"
+                                    <a href="{{ route('contact') }}"
                                        class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
                                         অর্ডার করুন
                                         <i class="fa-solid fa-arrow-right-long last"></i>
@@ -571,7 +718,7 @@
                                             <i class="fa-solid fa-angles-right black"></i> ফোন সাপোর্ট
                                         </li>
                                     </ul>
-                                    <a href="contact.html"
+                                    <a href="{{ route('contact') }}"
                                        class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
                                         অর্ডার করুন
                                         <i class="fa-solid fa-arrow-right-long last"></i>
@@ -601,7 +748,7 @@
                                             <i class="fa-solid fa-angles-right black"></i> দ্রুততম সময়ে রিপোর্ট
                                         </li>
                                     </ul>
-                                    <a href="contact.html"
+                                    <a href="{{ route('contact') }}"
                                        class="common-btn box-style py-3 w-100 first-box d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden blackbg rounded100">
                                         অর্ডার করুন
                                         <i class="fa-solid fa-arrow-right-long last"></i>
@@ -613,6 +760,102 @@
                 </div>
             </div>
         </section>
+        <!-- Why Choose Us Section Start -->
+        <section class="why-choose-section fix section-padding white-bg">
+            <div class="container">
+                <div class="row justify-content-center mb-md-5 mb-4">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="black mb-3">
+                            কেন ভিসাভাই-এর ভিসা যাচাই (Visa Verification) সেবা?
+                        </h2>
+                        <p class="pra fs-six">
+                            ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য বাংলাদেশের সবচেয়ে বিশ্বস্ত এবং প্রফেশনাল ডকুমেন্ট যাচাইকরণ সেবা প্রদানকারী প্রতিষ্ঠান।
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-shield-check fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">১০০% নির্ভরযোগ্য ভিসা যাচাই</h3>
+                            <p class="pra fs-eight">
+                                আমরা সরাসরি এম্বাসি এবং এয়ারলাইনসের অফিসিয়াল ডাটাবেস থেকে ভিসা যাচাই (Visa Verification) করি। ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-clock fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">দ্রুততম ভিসা যাচাই সেবা</h3>
+                            <p class="pra fs-eight">
+                                ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য ১২-২৪ ঘণ্টার মধ্যে রিপোর্ট প্রদান করি। জরুরি ক্ষেত্রে আরও দ্রুত সেবা প্রদান করা হয়।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-lock fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">১০০% নিরাপদ এবং গোপনীয়</h3>
+                            <p class="pra fs-eight">
+                                আপনার ব্যক্তিগত তথ্য এবং ডকুমেন্ট সম্পূর্ণ নিরাপদ। ভিসা যাচাই (Visa Verification) কাজ শেষে আমরা সকল তথ্য সার্ভার থেকে মুছে ফেলি। ডকুমেন্ট যাচাইকরণ সেবায় আপনার গোপনীয়তা আমাদের সর্বোচ্চ অগ্রাধিকার।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-users fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">অভিজ্ঞ এবং প্রফেশনাল টিম</h3>
+                            <p class="pra fs-eight">
+                                আমাদের অভিজ্ঞ টিম ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য বছরের পর বছর ধরে কাজ করছে। হাজার হাজার সফল যাচাইকরণের অভিজ্ঞতা আমাদের সাথে।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-globe fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">সব দেশের ভিসা যাচাই</h3>
+                            <p class="pra fs-eight">
+                                আমরা সব দেশের ভিসা যাচাই (Visa Verification) করি: সৌদি আরব, ভারত, আয়ারল্যান্ড, নিউজিল্যান্ড, স্কটল্যান্ড এবং আরও অনেক দেশ। ভিসা ডকুমেন্ট যাচাই, ভিসা সত্যতা যাচাই এবং নকল ভিসা চেকের জন্য আমাদের সেবা নিন।
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-box rounded-4 p-4 h-100 white-bg border">
+                            <div class="icon-box mb-3">
+                                <div class="icon d-center n100-bg radius-circle d-center mb-3" style="width: 60px; height: 60px;">
+                                    <i class="fa-solid fa-headset fs-4 black"></i>
+                                </div>
+                            </div>
+                            <h3 class="black mb-3">২৪/৭ কাস্টমার সাপোর্ট</h3>
+                            <p class="pra fs-eight">
+                                ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) সম্পর্কে যেকোনো প্রশ্নের জন্য আমাদের ২৪/৭ কাস্টমার সাপোর্ট টিম আপনার পাশে আছে। <a href="{{ route('contact') }}" class="text-decoration-underline">যোগাযোগ করুন</a>।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us Section End -->
         <!-- Faq Section Start -->
         <section class="faq-section section-padding fix">
             <div class="container">
@@ -683,6 +926,74 @@
                                         <div class="accordion-body">
                                             <p>
                                                 আমরা আপনাকে পরবর্তী আইনি পদক্ষেপ বা করণীয় সম্পর্কে সঠিক পরামর্শ দেবো এবং কিভাবে প্রতারণা থেকে বাঁচতে পারেন সে বিষয়ে গাইড করবো।
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                        ভিসা যাচাই (Visa Verification) করতে কি কি ডকুমেন্ট লাগে?
+                                    </button>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                         aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                ভিসা যাচাই (Visa Verification) এর জন্য আপনার ভিসা কপি, পাসপোর্ট নম্বর, ভিসা নম্বর এবং ভিসা ইস্যুর তারিখ দরকার। এয়ার টিকেট যাচাই (Air Ticket Verification) এর জন্য টিকেট নম্বর এবং পাসপোর্ট নম্বর প্রয়োজন। অফার লেটার যাচাই (Offer Letter Verification) এর জন্য অফার লেটার এবং কোম্পানির তথ্য প্রয়োজন।
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                        কি ধরনের ভিসা যাচাই (Visa Verification) করা যায়?
+                                    </button>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                         aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                আমরা সব ধরনের ভিসা যাচাই (Visa Verification) করি: ওয়ার্ক পারমিট ভিসা যাচাই (Work Permit Visa Verification), স্টুডেন্ট ভিসা যাচাই (Student Visa Verification), টুরিস্ট ভিসা যাচাই (Tourist Visa Verification), মেডিকেল ভিসা যাচাই (Medical Visa Verification), বিজনেস ভিসা যাচাই এবং অন্যান্য সব ধরনের ভিসা ডকুমেন্ট যাচাইকরণ সেবা প্রদান করি।
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">
+                                        ভিসা যাচাই (Visa Verification) এর খরচ কত?
+                                    </button>
+                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                         aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEight" aria-expanded="false"
+                                            aria-controls="collapseEight">
+                                        ভিসা যাচাই (Visa Verification) রিপোর্ট কতটা নির্ভরযোগ্য?
+                                    </button>
+                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                         aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                আমাদের ভিসা যাচাই (Visa Verification) রিপোর্ট ১০০% নির্ভরযোগ্য। আমরা সরাসরি এম্বাসি এবং এয়ারলাইনসের অফিসিয়াল ডাটাবেস থেকে তথ্য যাচাই করি। ভিসা সত্যতা যাচাই, নকল ভিসা চেক এবং ভিসা অথেনটিসিটি চেকের জন্য আমাদের প্রফেশনাল সেবা নিন।
                                             </p>
                                         </div>
                                     </div>

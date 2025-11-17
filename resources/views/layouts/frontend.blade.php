@@ -11,6 +11,8 @@
     
     <meta name="author" content="Visavai Team">
     <meta name="language" content="bn">
+    
+    @yield('structured_data')
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo/favs.png') }}">
