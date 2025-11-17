@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
@@ -9,4 +10,5 @@ Route::prefix('backend')->middleware('auth')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('backend.index');
     Route::resource('blog-categories', BlogCategoryController::class)->names('backend.blog-categories');
     Route::resource('blogs', BlogController::class)->names('backend.blogs');
+    Route::resource('contacts', ContactController::class)->names('backend.contacts')->only(['index', 'show', 'destroy']);
 });
