@@ -48,6 +48,13 @@
         !function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function d(){a.addEventListener&&a.removeEventListener("load",d),a.media=r||"all"}var i=e.document,a=i.createElement("link");if(n)a.href=n;else return;if("stylesheet"!==(a.rel||"stylesheet"))return;a.rel="stylesheet",a.addEventListener&&a.addEventListener("load",function(){this.media=r||"all"}),a.addEventListener&&a.addEventListener("load",d),a.onloadcssdefined=function(e){for(var t=a.sheet.cssRules,n=0;n<t.length;n++)if(t[n].media&&t[n].media.mediaText===r){return void e()}setTimeout(function(){a.onloadcssdefined(e)})},"undefined"!=typeof a.sheet&&a.onloadcssdefined&&a.onloadcssdefined(d),o(function(){i.head.appendChild(a)}),a};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
     </script>
     @yield('css')
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHPV3VDT');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
@@ -156,6 +163,10 @@
   gtag('config', 'G-RP4ERWJ9C8');
 </script>
 <!-- End of Google tag (gtag.js) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHPV3VDT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
