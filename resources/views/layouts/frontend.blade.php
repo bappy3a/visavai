@@ -64,7 +64,7 @@
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
         <div class="position-relative">
-            <img src="assets/img/logo/logo-sm.png" alt="logo-sm" width="60"
+            <img src="{{ asset('assets/img/logo/logo-sm.png') }}" alt="logo-sm" width="60"
                  class="position-absolute top-50 start-50 translate-middle">
             <div class="spinner">
             </div>
@@ -114,10 +114,6 @@
 <!-- Main area start -->
 @yield('content')
 <!-- Main area end -->
-<!-- Back to top button start -->
-{{--<button class="scroll-to-top position-fixed">--}}
-{{--    <i class="fas fa-chevron-up"></i>--}}
-{{--</button>--}}
 <!--<< Footer Section Start >>-->
 @include('inc.fooder')
 <!-- JS start here - Critical scripts first -->
@@ -166,8 +162,9 @@
 </script>
 <!-- End of Google tag (gtag.js) -->
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHPV3VDT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHPV3VDT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
 </body>
 
