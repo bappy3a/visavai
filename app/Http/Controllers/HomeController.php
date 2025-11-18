@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Models\Blog;
+use App\Models\BlogCategory;
 use App\Models\Contact;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 
@@ -70,7 +72,7 @@ class HomeController extends Controller
         return view('services');
     }
 
-    public function blogs(): View
+    public function blogs(Request $request): View
     {
         SEOMeta::setTitle('Blog - Visa Verification Tips, Travel Guides & Document Verification News | Visavai');
         SEOMeta::setDescription('Read our latest blogs about visa verification, air ticket verification, job offer letter verification, travel tips, fraud prevention, and document verification guides. Stay informed and protected.');
@@ -81,14 +83,68 @@ class HomeController extends Controller
         OpenGraph::setDescription('Read our latest blogs about visa verification, air ticket verification, job offer letter verification, travel tips, and fraud prevention.');
         OpenGraph::setUrl(url('/blogs'));
 
-        return view('blogs');
+        $query = Blog::with('category')
+            ->where('status', 'published')
+            ->whereNotNull('published_at');
+
+        // Search filter
+        if ($request->filled('search')) {
+            $searchTerm = trim($request->get('search'));
+            if (! empty($searchTerm)) {
+                $query->where(function ($q) use ($searchTerm) {
+                    $q->where('title', 'like', '%'.$searchTerm.'%')
+                        ->orWhere('excerpt', 'like', '%'.$searchTerm.'%')
+                        ->orWhere('content', 'like', '%'.$searchTerm.'%');
+                });
+            }
+        }
+
+        // Category filter
+        if ($request->filled('category')) {
+            $categorySlug = $request->get('category');
+            $categoryExists = BlogCategory::where('slug', $categorySlug)
+                ->where('is_active', true)
+                ->exists();
+
+            if ($categoryExists) {
+                $query->whereHas('category', function ($q) use ($categorySlug) {
+                    $q->where('slug', $categorySlug)
+                        ->where('is_active', true);
+                });
+            }
+        }
+
+        $blogs = $query->orderBy('published_at', 'desc')
+            ->paginate(6)
+            ->withQueryString();
+
+        $popularPosts = Blog::with('category')
+            ->where('status', 'published')
+            ->whereNotNull('published_at')
+            ->orderBy('views', 'desc')
+            ->limit(3)
+            ->get();
+
+        $categories = BlogCategory::where('is_active', true)
+            ->withCount(['blogs' => function ($query) {
+                $query->where('status', 'published')
+                    ->whereNotNull('published_at');
+            }])
+            ->orderBy('name')
+            ->get();
+
+        return view('blogs', compact('blogs', 'popularPosts', 'categories'));
     }
 
     public function blogsDetails(string $slug): View
     {
-        $blog = Blog::where('slug', $slug)
+        $blog = Blog::with('category')
+            ->where('slug', $slug)
             ->where('status', 'published')
             ->firstOrFail();
+
+        // Increment views
+        $blog->increment('views');
 
         $title = $blog->meta_title ?? $blog->title;
         $description = $blog->meta_description ?? $blog->excerpt ?? Str::limit(strip_tags($blog->content), 160);
@@ -111,7 +167,38 @@ class HomeController extends Controller
         TwitterCard::setDescription($description);
         TwitterCard::setImage($image);
 
-        return view('blog-details', compact('blog', 'slug'));
+        // Get previous and next blogs
+        $previousBlog = Blog::where('status', 'published')
+            ->whereNotNull('published_at')
+            ->where('published_at', '<', $blog->published_at)
+            ->orderBy('published_at', 'desc')
+            ->first();
+
+        $nextBlog = Blog::where('status', 'published')
+            ->whereNotNull('published_at')
+            ->where('published_at', '>', $blog->published_at)
+            ->orderBy('published_at', 'asc')
+            ->first();
+
+        // Get popular posts
+        $popularPosts = Blog::with('category')
+            ->where('status', 'published')
+            ->whereNotNull('published_at')
+            ->where('id', '!=', $blog->id)
+            ->orderBy('views', 'desc')
+            ->limit(3)
+            ->get();
+
+        // Get categories
+        $categories = BlogCategory::where('is_active', true)
+            ->withCount(['blogs' => function ($query) {
+                $query->where('status', 'published')
+                    ->whereNotNull('published_at');
+            }])
+            ->orderBy('name')
+            ->get();
+
+        return view('blog-details', compact('blog', 'previousBlog', 'nextBlog', 'popularPosts', 'categories'));
     }
 
     public function contact(): View

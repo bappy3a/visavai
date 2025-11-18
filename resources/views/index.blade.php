@@ -1031,31 +1031,19 @@ $breadcrumbSchema = [
                         <div class="col-xl-4 col-md-6 col-sm-6">
                             <div class="news-single-items rounded-4 overflow-hidden style1">
                                 <div class="news-image reveal-left">
-                                    <img src="{{ asset('assets/img/blog/blog-grid1.webp') }}" alt="news-img" loading="lazy">
+                                    <img src="{{ asset($blog->featured_image) }}" alt="{{ $blog->title }}" loading="lazy" width="300" height="200">
                                 </div>
                                 <div class="news-content border rounded-bottom-4">
-                                    <ul
-                                        class="comment-tag d-flex align-items-center gap-xl-4 gap-lg-3 gap-2 mb-lg-2 mb-2">
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-user black"></i> By admin</button>
-                                        </li>
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-calendar-days black"></i> October 19,
-                                                2022</button>
-                                        </li>
-                                    </ul>
+                                    
                                     <h3 class="mb-2 pb-1">
                                         <a href="blog-details.html" class="black">
-                                            Empower Your Travels
+                                           {{$blog->title}}
                                         </a>
                                     </h3>
                                     <p class="fs-eight mb-lg-4 mb-3">
-                                        A Visa allows individuals to enter a country for a various such tourism A Visa
-                                        allows
+                                        {{$blog->excerpt}}
                                     </p>
-                                    <a href="blog-details.html"
+                                    <a href="{{ route('blogs.details', $blog->slug) }}"
                                        class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
                                         Read More <i class="fa-solid fa-arrow-right"></i>
                                     </a>
@@ -1063,75 +1051,6 @@ $breadcrumbSchema = [
                             </div>
                         </div>
                         @endforeach
-
-                        <div class="col-xl-4 col-md-6 col-sm-6">
-                            <div class="news-single-items rounded-4 overflow-hidden style1">
-                                <div class="news-image reveal-left">
-                                    <img src="{{ asset('assets/img/blog/blog-grid2.webp') }}" alt="news-img" loading="lazy">
-                                </div>
-                                <div class="news-content border rounded-bottom-4">
-                                    <ul
-                                        class="comment-tag d-flex align-items-center gap-xl-4 gap-lg-3 gap-2 mb-lg-2 mb-2">
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-user black"></i> By admin</button>
-                                        </li>
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-calendar-days black"></i> October 19,
-                                                2022</button>
-                                        </li>
-                                    </ul>
-                                    <h3 class="mb-2 pb-1">
-                                        <a href="blog-details.html" class="black">
-                                            Unlock New Horizons
-                                        </a>
-                                    </h3>
-                                    <p class="fs-eight mb-lg-4 mb-3">
-                                        A Visa allows individuals to enter a country for a various such tourism A Visa
-                                        allows
-                                    </p>
-                                    <a href="blog-details.html"
-                                       class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
-                                        Read More <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-6">
-                            <div class="news-single-items rounded-4 overflow-hidden style1">
-                                <div class="news-image reveal-left">
-                                    <img src="{{ asset('assets/img/blog/blog-grid3.webp') }}" alt="news-img" loading="lazy">
-                                </div>
-                                <div class="news-content border rounded-bottom-4">
-                                    <ul
-                                        class="comment-tag d-flex align-items-center gap-xl-4 gap-lg-3 gap-2 mb-lg-2 mb-2">
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-user black"></i> By admin</button>
-                                        </li>
-                                        <li>
-                                            <button type="button" class="black fw-500 fs-eight"><i
-                                                    class="fa-solid fa-calendar-days black"></i> October 19,
-                                                2022</button>
-                                        </li>
-                                    </ul>
-                                    <h3 class="mb-2 pb-1">
-                                        <a href="blog-details.html" class="black">
-                                            Venture Every where
-                                        </a>
-                                    </h3>
-                                    <p class="fs-eight mb-lg-4 mb-3">
-                                        A Visa allows individuals to enter a country for a various such tourism A Visa
-                                        allows
-                                    </p>
-                                    <a href="blog-details.html"
-                                       class="read-more fs20 fw-semibold black heading-font d-block d-flex align-items-center">
-                                        Read More <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

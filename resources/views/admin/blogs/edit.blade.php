@@ -148,7 +148,7 @@
                                        <div class="card-body text-center">
                                             <div id="imagePreview" class="bg-light rounded p-3" style="min-height: 200px; display: flex; align-items: center; justify-content: center;">
                                                  @if($blog->featured_image)
-                                                      <img src="{{ $blog->featured_image }}" alt="Featured Image" class="img-fluid rounded" style="max-height: 300px;" id="currentImage">
+                                                      <img src="{{ asset($blog->featured_image) }}" alt="Featured Image" class="img-fluid rounded" style="max-height: 300px;" id="currentImage">
                                                  @else
                                                       <p class="text-muted mb-0">No image selected</p>
                                                  @endif
