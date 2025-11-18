@@ -19,7 +19,7 @@
             </div>
         </div>
         <!-- Element -->
-        <img src="{{ asset('assets/img/banner/breadcrumb-ele.png') }}" alt="img" class="inner-element">
+        <img src="{{ asset('assets/img/banner/breadcrumb-ele.webp') }}" alt="img" class="inner-element">
     </section>
     <!-- Blog Section Start-->
     <section class="blog-details-section section-padding">
@@ -29,7 +29,7 @@
                     <div class="blog-details-left">
                         <div class="blog-details-box">
                             <div class="thumb position-relative rounded-4">
-                                <img src="{{ asset('assets/img/blog/blog-big1.png') }}" alt="img" class="w-100 rounded-4">
+                                <img src="{{ asset('assets/img/blog/blog-big1.webp') }}" alt="img" class="w-100 rounded-4">
                             </div>
                             <div class="content">
                                 <ul class="comment-tag">
@@ -66,7 +66,7 @@
                         </div>
                         <div class="blog-details-box">
                             <div class="thumb position-relative rounded-4">
-                                <img src="{{ asset('assets/img/blog/blog-big2.png') }}" alt="img" class="w-100 rounded-4">
+                                <img src="{{ asset('assets/img/blog/blog-big2.webp') }}" alt="img" class="w-100 rounded-4">
                             </div>
                             <div class="content">
                                 <ul class="comment-tag">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="blog-details-box">
                             <div class="thumb position-relative rounded-4">
-                                <img src="{{ asset('assets/img/blog/blog-big3.png') }}" alt="img" class="w-100 rounded-4">
+                                <img src="{{ asset('assets/img/blog/blog-big3.webp') }}" alt="img" class="w-100 rounded-4">
                             </div>
                             <div class="content">
                                 <ul class="comment-tag">

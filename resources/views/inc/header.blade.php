@@ -36,7 +36,7 @@
                     </a>
                     <div class="header__hamburger d-xl-none d-block my-auto">
                         <div class="sidebar__toggle">
-                            <img src="assets/img/icon/menu.png" alt="icon" loading="eager">
+                            <img src="{{ asset('assets/img/icon/menu.webp') }}" alt="icon" loading="eager">
                         </div>
                     </div>
 

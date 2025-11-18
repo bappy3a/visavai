@@ -18,7 +18,7 @@
             </div>
         </div>
         <!-- Element -->
-        <img src="{{ asset('assets/img/banner/breadcrumb-ele.png') }}" alt="img" class="inner-element">
+        <img src="{{ asset('assets/img/banner/breadcrumb-ele.webp') }}" alt="img" class="inner-element">
     </section>
     <!-- About Section Start -->
     <section class="about-section fix space-top">
@@ -38,14 +38,14 @@
                             <div class="about-information d-grid gap-xl-3 gap-3 white-bg">
                                 <div class="about-info d-flex align-items-center gap-lg-3 gap-2">
                                     <div class="icon d-center n100-bg">
-                                        <img src="{{ asset('assets/img/icon/passport.png') }}" alt="img">
+                                        <img src="{{ asset('assets/img/icon/passport.webp') }}" alt="img">
                                     </div>
                                     <h4 class="black">আপনার নিরাপদ যাত্রার নিশ্চয়তা</h4>
                                 </div>
                                 <div class="line"></div>
                                 <div class="about-info d-flex align-items-center gap-lg-3 gap-2">
                                     <div class="icon d-center n100-bg">
-                                        <img src="{{ asset('assets/img/icon/passport.png') }}" alt="img">
+                                        <img src="{{ asset('assets/img/icon/passport.webp') }}" alt="img">
                                     </div>
                                     <h4 class="black">ভিসা যাচাইয়ে আপনার বিশ্বস্ত সঙ্গী</h4>
                                 </div>
@@ -59,9 +59,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-thumb position-relative reveal-left w-100 ms-xl-5">
-                            <img src="{{ asset('assets/img/about/about-thumb-main.png') }}" alt="img" class="w-100">
+                            <img src="{{ asset('assets/img/about/about-thumb-main.webp') }}" alt="img" class="w-100">
                             <!-- Ele -->
-                            <img src="{{ asset('assets/img/about/about-thumb-mainele.png') }}" alt="img" class="about-ele">
+                            <img src="{{ asset('assets/img/about/about-thumb-mainele.webp') }}" alt="img" class="about-ele">
                         </div>
                     </div>
                 </div>
@@ -82,47 +82,47 @@
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/soudi-flag.png') }}" alt="img"></span>
-                        <img src="{{ asset('assets/img/services/soudi.png') }}" alt="img" class="w-100 rounded-4">
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/soudi-flag.webp') }}" alt="img"></span>
+                        <img src="{{ asset('assets/img/services/soudi.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/india-flag.png') }}" alt="img"></span>
-                        <img src="{{ asset('assets/img/services/india.png') }}" alt="img" class="w-100 rounded-4">
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/india-flag.webp') }}" alt="img"></span>
+                        <img src="{{ asset('assets/img/services/india.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/ireland-flag.png') }}"
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/ireland-flag.webp') }}"
                                 alt="img"></span>
-                        <img src="{{ asset('assets/img/services/ireland.png') }}" alt="img" class="w-100 rounded-4">
+                        <img src="{{ asset('assets/img/services/ireland.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/bangladesh-flag.png') }}"
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/bangladesh-flag.webp') }}"
                                 alt="img"></span>
-                        <img src="{{ asset('assets/img/services/bangladesh.png') }}" alt="img" class="w-100 rounded-4">
+                        <img src="{{ asset('assets/img/services/bangladesh.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/newzeland-flag.png') }}"
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/newzeland-flag.webp') }}"
                                 alt="img"></span>
-                        <img src="{{ asset('assets/img/services/newzeland.png') }}" alt="img" class="w-100 rounded-4">
+                        <img src="{{ asset('assets/img/services/newzeland.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-4">
                     <a href="country-details.html"
                         class="adventure-access-item d-center position-relative btn-vivacity rounded-4">
-                        <span class="flat d-center"><img src="{{ asset('assets/img/services/scotland-flag.png') }}"
+                        <span class="flat d-center"><img src="{{ asset('assets/img/services/scotland-flag.webp') }}"
                                 alt="img"></span>
-                        <img src="{{ asset('assets/img/services/scotland.png') }}" alt="img" class="w-100 rounded-4">
+                        <img src="{{ asset('assets/img/services/scotland.webp') }}" alt="img" class="w-100 rounded-4">
                     </a>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                                 <a href="visa-details.html" class="black">ওয়ার্ক পারমিট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
-                                <img src="{{ asset('assets/img/icon/unseen-icon1.png') }}" alt="img">
+                                <img src="{{ asset('assets/img/icon/unseen-icon1.webp') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
@@ -178,7 +178,7 @@
                                 <a href="visa-details.html" class="black">স্টুডেন্ট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
-                                <img src="{{ asset('assets/img/icon/unseen-icon2.png') }}" alt="img">
+                                <img src="{{ asset('assets/img/icon/unseen-icon2.webp') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
@@ -197,7 +197,7 @@
                                 <a href="visa-details.html" class="black">মেডিকেল ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
-                                <img src="{{ asset('assets/img/icon/unseen-icon3.png') }}" alt="img">
+                                <img src="{{ asset('assets/img/icon/unseen-icon3.webp') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
@@ -216,7 +216,7 @@
                                 <a href="visa-details.html" class="black">টুরিস্ট ভিসা</a>
                             </h3>
                             <div class="icon d-center n100-bg radius-circle d-center">
-                                <img src="{{ asset('assets/img/icon/unseen-icon4.png') }}" alt="img">
+                                <img src="{{ asset('assets/img/icon/unseen-icon4.webp') }}" alt="img">
                             </div>
                         </div>
                         <p class=" fs-eight pra mb-4">
@@ -238,7 +238,7 @@
                 <div class="col-md-6 col-lg-6">
                     <div class="picture-dicover-content rounded-4 h-100">
                         <div class="icon rounded-circle d-center bg-white mb-3">
-                            <img src="{{ asset('assets/img/icon/picture-doller.png') }}" alt="img">
+                            <img src="{{ asset('assets/img/icon/picture-doller.webp') }}" alt="img">
                         </div>
                         <h3 class="mb-xxl-4 mb-4 pb-1p">
                             <a href="#" class="black fw-bold">
@@ -254,7 +254,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="picture-thumb1 h-100 rounded-4 overflow-hidden reveal-left">
-                        <img src="{{ asset('assets/img/services/picture-thumb.png') }}" alt="img" class="w-100 h-100 rounded-4">
+                        <img src="{{ asset('assets/img/services/picture-thumb.webp') }}" alt="img" class="w-100 h-100 rounded-4">
                     </div>
                 </div>
                 <div class="col-xl-8">
@@ -284,7 +284,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="best-badge rounded-4 h-100 d-flex align-items-center gap-xl-4 gap-3">
-                        <img src="{{ asset('assets/img/services/badge.png') }}" alt="img">
+                        <img src="{{ asset('assets/img/services/badge.webp') }}" alt="img">
                         <h3>
                             <a href="#" class="black fw-bold">
                                 Best Awarded Company
@@ -585,7 +585,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-lg-4 faq-thumb1 w-100 reveal-left overflow-hidden">
-                        <img src="{{ asset('assets/img/faq/faq1.png') }}" alt="img" class="w-100">
+                        <img src="{{ asset('assets/img/faq/faq1.webp') }}" alt="img" class="w-100">
                     </div>
                 </div>
             </div>

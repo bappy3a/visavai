@@ -18,7 +18,7 @@
             </div>
         </div>
         <!-- Element -->
-        <img src="{{ asset('assets/img/banner/breadcrumb-ele.png') }}" alt="img" class="inner-element">
+        <img src="{{ asset('assets/img/banner/breadcrumb-ele.webp') }}" alt="img" class="inner-element">
     </section>
     <!-- Contact Info & Map Section Start -->
     <section class="contact-info-map-section section-padding fix bg-white">

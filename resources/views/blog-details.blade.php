@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- Element -->
-        <img src="{{ asset('assets/img/banner/breadcrumb-ele.png') }}" alt="img" class="inner-element">
+        <img src="{{ asset('assets/img/banner/breadcrumb-ele.webp') }}" alt="img" class="inner-element">
     </section>
     <!-- Blog Section Start-->
     <section class="blog-details-section section-padding">
@@ -27,7 +27,7 @@
                     <div class="blog-details-left">
                         <div class="blog-details-box style2">
                             <div class="thumb position-relative mb-xxl-4 mb-3 rounded-4">
-                                <img src="{{ asset('assets/img/blog/blog-big4.png') }}" alt="img" class="w-100 rounded-4">
+                                <img src="{{ asset('assets/img/blog/blog-big4.webp') }}" alt="img" class="w-100 rounded-4">
                             </div>
                             <div class="content border-0 p-0">
                                 <ul class="comment-tag">
@@ -121,11 +121,11 @@
                                 <div
                                     class="d-flex mb-40 flex-sm-nowrap flex-wrap align-items-center gap-xxl-4 gap-xl-3 gap-2">
                                     <div class="thumbs w-100 rounded-4">
-                                        <img src="{{ asset('assets/img/blog/blog-middle1.png') }}" alt="img"
+                                        <img src="{{ asset('assets/img/blog/blog-middle1.webp') }}" alt="img"
                                             class="w-100 rounded-4">
                                     </div>
                                     <div class="thumbs w-100 rounded-4">
-                                        <img src="{{ asset('assets/img/blog/blog-middle2.png') }}" alt="img"
+                                        <img src="{{ asset('assets/img/blog/blog-middle2.webp') }}" alt="img"
                                             class="w-100 rounded-4">
                                     </div>
                                 </div>

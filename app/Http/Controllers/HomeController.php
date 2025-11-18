@@ -33,7 +33,13 @@ class HomeController extends Controller
         TwitterCard::setDescription('Professional visa verification, air ticket verification, and job offer letter verification services.');
         TwitterCard::setImage(asset('assets/img/logo/logo.webp'));
 
-        return view('index');
+        $blogs = Blog::where('status', 'published')
+            ->whereNotNull('published_at')
+            ->orderBy('published_at', 'desc')
+            ->limit(3)
+            ->get();
+
+        return view('index', compact('blogs'));
     }
 
     public function about(): View

@@ -15,7 +15,7 @@
     @yield('structured_data')
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo/favs.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/logo/favs.webp') }}">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Resource Hints -->
@@ -64,7 +64,7 @@
 <div id="preloader" class="preloader">
     <div class="animation-preloader">
         <div class="position-relative">
-            <img src="{{ asset('assets/img/logo/logo-sm.png') }}" alt="logo-sm" width="60"
+            <img src="{{ asset('assets/img/logo/logo-sm.webp') }}" alt="logo-sm" width="60"
                  class="position-absolute top-50 start-50 translate-middle">
             <div class="spinner">
             </div>

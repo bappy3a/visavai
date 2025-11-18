@@ -6,9 +6,11 @@ use App\Models\Blog;
 use App\Models\BlogCategory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
+use RuntimeException;
 
 class BlogController extends Controller
 {
@@ -65,7 +67,7 @@ class BlogController extends Controller
 
         // Handle file upload
         if ($request->hasFile('featured_image_file')) {
-            $imagePath = $request->file('featured_image_file')->store('uploads/blogs');
+            $imagePath = $this->convertAndStoreAsWebp($request->file('featured_image_file'));
             $validated['featured_image'] = $imagePath;
             $validated['meta_image'] = $imagePath;
         }
@@ -128,7 +130,7 @@ class BlogController extends Controller
                 Storage::disk('public')->delete($oldImagePath);
             }
 
-            $imagePath = $request->file('featured_image_file')->store('uploads/blogs');
+            $imagePath = $this->convertAndStoreAsWebp($request->file('featured_image_file'));
             $validated['featured_image'] = $imagePath;
             $validated['meta_image'] = $imagePath;
         }
@@ -151,5 +153,40 @@ class BlogController extends Controller
 
         return redirect()->route('backend.blogs.index')
             ->with('success', 'Blog deleted successfully.');
+    }
+
+    private function convertAndStoreAsWebp(UploadedFile $file, int $quality = 80): string
+    {
+        $imageResource = imagecreatefromstring($file->get());
+
+        if ($imageResource === false) {
+            throw new RuntimeException('Unable to read the uploaded image.');
+        }
+
+        $temporaryPath = tempnam(sys_get_temp_dir(), 'blog_webp_');
+
+        if ($temporaryPath === false) {
+            imagedestroy($imageResource);
+
+            throw new RuntimeException('Unable to create a temporary file for image processing.');
+        }
+
+        if (! imagewebp($imageResource, $temporaryPath, $quality)) {
+            imagedestroy($imageResource);
+            @unlink($temporaryPath);
+
+            throw new RuntimeException('Unable to convert the uploaded image to WebP format.');
+        }
+
+        imagedestroy($imageResource);
+
+        $filename = Str::uuid().'.webp';
+        $storagePath = 'uploads/blogs/'.$filename;
+
+        Storage::put($storagePath, file_get_contents($temporaryPath));
+
+        @unlink($temporaryPath);
+
+        return $storagePath;
     }
 }
