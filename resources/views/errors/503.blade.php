@@ -12,9 +12,9 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #fff;
-            color: #5f6368;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #000;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,53 +28,93 @@
             width: 100%;
         }
         
-        .error-icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 40px;
-            position: relative;
-        }
-        
-        .error-icon svg {
-            width: 100%;
-            height: 100%;
-        }
-        
         .error-title {
             font-size: 28px;
-            font-weight: 400;
-            color: #202124;
-            margin-bottom: 16px;
-            line-height: 1.2;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 20px;
         }
         
         .error-message {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .error-message strong {
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .error-info {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .error-info-item {
             font-size: 14px;
-            color: #5f6368;
-            margin-bottom: 32px;
-            line-height: 1.5;
+            color: #d0d0d0;
+            margin-bottom: 10px;
         }
         
-        .error-code {
-            font-size: 12px;
-            color: #9aa0a6;
-            margin-top: 24px;
+        .error-info-item:last-child {
+            margin-bottom: 0;
         }
         
-        .error-code strong {
-            color: #5f6368;
+        .error-info-item strong {
+            color: #fff;
+            font-weight: 600;
+            display: inline-block;
+            min-width: 100px;
+        }
+        
+        .error-codes {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .error-codes-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        
+        .error-code-item {
+            font-size: 13px;
+            color: #d0d0d0;
+            margin-bottom: 8px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .error-code-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .error-code-item strong {
+            color: #ff6b6b;
+            font-weight: 600;
         }
         
         .retry-button {
             display: inline-block;
             background-color: #1a73e8;
             color: #fff;
-            padding: 10px 24px;
-            border-radius: 4px;
+            padding: 12px 28px;
+            border-radius: 6px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
-            margin-top: 16px;
+            margin-top: 20px;
             transition: background-color 0.2s;
             border: none;
             cursor: pointer;
@@ -90,43 +130,52 @@
         
         @media (max-width: 600px) {
             .error-title {
-                font-size: 22px;
+                font-size: 24px;
             }
             
-            .error-icon {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 24px;
+            .error-message {
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
     <div class="error-container">
-        <div class="error-icon">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="80" fill="none" stroke="#dadce0" stroke-width="2"/>
-                <path d="M 100 60 L 100 100 M 100 120 L 100 140" stroke="#5f6368" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="100" cy="100" r="8" fill="#5f6368"/>
-            </svg>
-        </div>
-        
         <h1 class="error-title">DNS address could not be found</h1>
         
         <p class="error-message">
             The server at <strong id="hostname">{{ request()->getHost() }}</strong> can't be found, because the DNS lookup failed.
         </p>
         
-        <button class="retry-button" onclick="window.location.reload()">Reload</button>
-        
-        <div class="error-code">
-            <strong>Error code:</strong> DNS_PROBE_FINISHED_NXDOMAIN
+        <div class="error-info">
+            <div class="error-info-item">
+                <strong>Hostname:</strong> <span id="hostname-detail">{{ request()->getHost() }}</span>
+            </div>
+            <div class="error-info-item">
+                <strong>IP Address:</strong> {{ request()->ip() }}
+            </div>
+            <div class="error-info-item">
+                <strong>Status Code:</strong> 503 Service Unavailable
+            </div>
         </div>
+        
+        <div class="error-codes">
+            <div class="error-codes-title">Error Codes</div>
+            <div class="error-code-item">
+                <strong>DNS_PROBE_FINISHED_NXDOMAIN</strong> - Domain name cannot be resolved
+            </div>
+            <div class="error-code-item">
+                <strong>ERR_NAME_NOT_RESOLVED</strong> - DNS lookup failed
+            </div>
+            <div class="error-code-item">
+                <strong>ERR_CONNECTION_REFUSED</strong> - Server refused connection
+            </div>
+            <div class="error-code-item">
+                <strong>ERR_TIMED_OUT</strong> - Connection timed out
+            </div>
+        </div>
+        
     </div>
     
-    <script>
-        // Update hostname dynamically
-        document.getElementById('hostname').textContent = window.location.hostname || '{{ request()->getHost() }}';
-    </script>
 </body>
 </html>
