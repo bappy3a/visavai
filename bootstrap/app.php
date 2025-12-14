@@ -13,6 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(append: [
             \App\Http\Middleware\CacheStaticAssets::class,
+            \App\Http\Middleware\SuspendHosting::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
