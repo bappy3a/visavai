@@ -117,7 +117,7 @@ $faqSchema = [
             'name' => 'ভিসা যাচাই (Visa Verification) এর খরচ কত?',
             'acceptedAnswer' => [
                 '@type' => 'Answer',
-                'text' => 'আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।'
+                'text' => 'আমাদের সিঙ্গেল চেক প্যাকেজে ৳১২৫০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳২৪০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ২৯৯০ ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।'
             ]
         ],
         [
@@ -672,7 +672,7 @@ $breadcrumbSchema = [
                                         <div
                                             class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
                                             <div class="box">
-                                                <h2 class="black">৳৫০০</h2>
+                                                <h2 class="black">৳১২৫০</h2>
                                                 <span class="pra">প্রতি ডকুমেন্ট</span>
                                             </div>
                                         </div>
@@ -702,7 +702,7 @@ $breadcrumbSchema = [
                                         <div
                                             class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
                                             <div class="box">
-                                                <h2 class="black">৳১২০০</h2>
+                                                <h2 class="black">৳২৪০০</h2>
                                                 <span class="pra">এককালীন</span>
                                             </div>
                                         </div>
@@ -732,7 +732,7 @@ $breadcrumbSchema = [
                                         <div
                                             class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
                                             <div class="box">
-                                                <h2 class="black">৳২৫০০</h2>
+                                                <h2 class="black">৳২৯৯০</h2>
                                                 <span class="pra">এককালীন</span>
                                             </div>
                                         </div>
@@ -977,7 +977,7 @@ $breadcrumbSchema = [
                                          aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <p>
-                                                আমাদের সিঙ্গেল চেক প্যাকেজে ৳৫০০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳১২০০ (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে ৳২৫০০। ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।
+                                                আমাদের সিঙ্গেল চেক প্যাকেজে ৳১২৫০ প্রতি ডকুমেন্ট, কম্বো প্যাকে ৳2400 (ভিসা + টিকেট + অফার লেটার), এবং প্রিমিয়াম সাপোর্টে 2990 ভিসা যাচাই (Visa Verification), এয়ার টিকেট যাচাই (Air Ticket Verification) এবং অফার লেটার যাচাই (Offer Letter Verification) এর জন্য আমাদের সাশ্রয়ী মূল্যের প্যাকেজ রয়েছে।
                                             </p>
                                         </div>
                                     </div>

@@ -323,7 +323,7 @@
                                     <div
                                         class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳৫০০</h2>
+                                            <h2 class="black">৳১২৫০</h2>
                                             <span class="pra">প্রতি ডকুমেন্ট</span>
                                         </div>
                                     </div>
@@ -353,7 +353,7 @@
                                     <div
                                         class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳১২০০</h2>
+                                            <h2 class="black">৳২৪০০</h2>
                                             <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
@@ -383,7 +383,7 @@
                                     <div
                                         class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳২৫০০</h2>
+                                            <h2 class="black">৳২৯৯০</h2>
                                             <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
@@ -417,7 +417,7 @@
                                     <div
                                         class="price-box d-grid p1-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳১২০০</h2>
+                                            <h2 class="black">৳২৪০০</h2>
                                             <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
@@ -447,7 +447,7 @@
                                     <div
                                         class="price-box d-grid p2-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳৫০০</h2>
+                                            <h2 class="black">৳১২৫০</h2>
                                             <span class="pra">প্রতি ডকুমেন্ট</span>
                                         </div>
                                     </div>
@@ -477,7 +477,7 @@
                                     <div
                                         class="price-box d-grid p3-bg rounded-circle gap-1 align-items-center text-center black">
                                         <div class="box">
-                                            <h2 class="black">৳২৫০০</h2>
+                                            <h2 class="black">৳২৯৯০</h2>
                                             <span class="pra">এককালীন</span>
                                         </div>
                                     </div>
